@@ -1,0 +1,10 @@
+{
+	"id": "tab-link",
+	"name": "Tab Link",
+	"version": "1.2.5",
+	"minAppVersion": "1.0.0",
+	"description": "Cursor-style ghost text autocomplete for linking to notes.",
+	"author": "Jon-Vii",
+	"authorUrl": "https://github.com/Jon-Vii",
+	"isDesktopOnly": false
+}

@@ -1,0 +1,72 @@
+{
+  "items": {
+    "/": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "Sessions",
+        "Dawn's Promise.md",
+        "Laurel.md",
+        "Noel.md",
+        "Sir Roland.md",
+        "Sir Taymour.md",
+        "Varka.md"
+      ]
+    },
+    "Dawn's Promise.md": {
+      "isPinned": true,
+      "isHidden": false,
+      "ctime": 1791137604831,
+      "mtime": 1791279724201
+    },
+    "Laurel.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791133330134,
+      "mtime": 1791137694584
+    },
+    "Noel.md": {
+      "isPinned": true,
+      "isHidden": false,
+      "ctime": 1791133281635,
+      "mtime": 1791232619400
+    },
+    "Sessions": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "2026-10-04.md"
+      ]
+    },
+    "Sessions/2026-10-04.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791133289848,
+      "mtime": 1791279598493
+    },
+    "Sir Roland.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791133320426,
+      "mtime": 1791280944635
+    },
+    "Sir Taymour.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791133326071,
+      "mtime": 1791280572264
+    },
+    "Varka.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791133328596,
+      "mtime": 1791137701178
+    }
+  },
+  "showHidden": false,
+  "hidePatterns": [],
+  "newItemPlacement": "top",
+  "persistOrderOnCreateDelete": true,
+  "debugMode": false
+}

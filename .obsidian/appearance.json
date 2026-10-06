@@ -1,0 +1,8 @@
+{
+  "cssTheme": "Baseline",
+  "accentColor": "#2e979e",
+  "baseFontSizeAction": true,
+  "showViewHeader": true,
+  "showRibbon": true,
+  "nativeMenus": false
+}

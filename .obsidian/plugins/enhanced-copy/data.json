@@ -1,0 +1,31 @@
+{
+  "copyAsHTML": false,
+  "applyingTo": "all",
+  "rtf": false,
+  "separateHotkey": false,
+  "editing": {
+    "footnotes": "format",
+    "links": "external",
+    "callout": "removeKeepTitle",
+    "highlight": true,
+    "hardBreak": false,
+    "replaceText": [],
+    "overrideNativeCopy": false,
+    "wikiToMarkdown": true,
+    "tabToSpace": true,
+    "tabSpaceSize": 2
+  },
+  "reading": {
+    "footnotes": "keep",
+    "links": "keep",
+    "callout": "obsidian",
+    "highlight": false,
+    "hardBreak": false,
+    "replaceText": [],
+    "overrideNativeCopy": false,
+    "spaceReadingSize": -1,
+    "wikiToMarkdown": false
+  },
+  "devMode": false,
+  "profiles": []
+}

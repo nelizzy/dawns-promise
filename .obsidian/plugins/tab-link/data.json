@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "autoSpace": true,
+  "excludedFolders": "",
+  "minChars": 3,
+  "debounceMs": 150
+}

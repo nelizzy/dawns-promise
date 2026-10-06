@@ -1,0 +1,19 @@
+/* Ghost text suggestion styling */
+.tab-link-ghost-text {
+	color: var(--text-muted);
+	opacity: 0.6;
+	font-style: italic;
+	pointer-events: none;
+	user-select: none;
+}
+
+/* Slightly darker in dark mode for better visibility */
+.theme-dark .tab-link-ghost-text {
+	opacity: 0.5;
+}
+
+/* Tab symbol indicator */
+.tab-link-ghost-text::after {
+	content: " ⇥";
+	font-size: 0.85em;
+}

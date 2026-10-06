@@ -1,0 +1,28 @@
+---
+cssclasses:
+  - text
+tags:
+---
+# Noel
+A Founder of [[Dawn's Promise]]
+
+# Equipment Wants
+
+| Slot      | Current Item                                                                                                                    | Wanted Item                                                                                                                     | Current Cost | Wanted Cost |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | -----------: | ----------: |
+| Armor     | [+1](https://www.aonprd.com/Rules.aspx?ID=376) Mithral Shirt                                                                    | [+2 Armor](https://www.aonprd.com/Rules.aspx?ID=376)                                                                            |        1.000 |       3.000 |
+| Belts     | [Belt of Mighty Constitution +2](https://www.aonprd.com/MagicWondrousDisplay.aspx?FinalName=Belt%20of%20Mighty%20Constitution2) |                                                                                                                                 |        4.000 |             |
+| Body      |                                                                                                                                 | [Apron of the Careful Chemist](https://www.aonprd.com/MagicWondrousDisplay.aspx?FinalName=Apron%20of%20the%20Careful%20Chemist) |              |       5.200 |
+| Chest     |                                                                                                                                 |                                                                                                                                 |              |             |
+| Eyes      |                                                                                                                                 | [Eyes of the Eagle](https://www.aonprd.com/MagicWondrousDisplay.aspx?FinalName=Eyes%20of%20the%20Eagle)                         |              |       2.500 |
+| Feet      |                                                                                                                                 |                                                                                                                                 |              |             |
+| Hands     |                                                                                                                                 | [Apprentice's Cheating Gloves](https://aonprd.com/MagicWondrousDisplay.aspx?FinalName=Apprentice%27s%20Cheating%20Gloves)       |              |       2.200 |
+| Head      |                                                                                                                                 |                                                                                                                                 |              |             |
+| Headband  |                                                                                                                                 | [Kineticist's Diadem (Blue)](https://www.aonprd.com/MagicWondrousDisplay.aspx?FinalName=Kineticist%27s%20DiademNormal)          |              |      18.000 |
+| Neck      |                                                                                                                                 | [Amulet of Natural Armor (+1)](https://www.aonprd.com/MagicWondrousDisplay.aspx?FinalName=Amulet%20of%20Natural%20Armor1)       |              |       2.000 |
+| Ring 1    |                                                                                                                                 | [Ring of Protection (+1)](https://www.aonprd.com/MagicRingsDisplay.aspx?FinalName=Ring%20of%20Protection1)                      |              |       2.000 |
+| Ring 2    |                                                                                                                                 |                                                                                                                                 |              |             |
+| Shield    | -                                                                                                                               |                                                                                                                                 |              |             |
+| Shoulders | [Cloak of Resistance (+1)](https://www.aonprd.com/MagicWondrousDisplay.aspx?FinalName=Cloak%20of%20Resistance1)                 | [Cloak of Resistance (+2)](https://www.aonprd.com/MagicWondrousDisplay.aspx?FinalName=Cloak%20of%20Resistance2)                 |        1.000 |       3.000 |
+| Wrists    | [Sleeves of Many Garments](https://www.aonprd.com/MagicWondrousDisplay.aspx?FinalName=Sleeves%20of%20Many%20Garments)           | [Gloves of Elvenkind](https://www.aonprd.com/MagicWondrousDisplay.aspx?FinalName=Gloves%20of%20Elvenkind)                       |          200 |       7.500 |
+| Slotless* |                                                                                                                                 |                                                                                                                                 |              |             |
