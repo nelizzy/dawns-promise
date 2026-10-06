@@ -3,6 +3,7 @@
     "/": {
       "isPinned": false,
       "isHidden": false,
+      "sortOrder": "custom",
       "customOrder": [
         "Sessions",
         "Dawn's Promise.md",

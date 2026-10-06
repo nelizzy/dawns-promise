@@ -30,6 +30,7 @@ module.exports = __toCommonJS(main_exports);
 var import_obsidian2 = require("obsidian");
 
 // src/note-index.ts
+var UNRESOLVED_PREFIX = "unresolved:";
 var TrieNode = class {
   constructor() {
     this.children = /* @__PURE__ */ new Map();
@@ -89,6 +90,8 @@ var NoteIndex = class {
     this.pathToKeys = /* @__PURE__ */ new Map();
     // path -> keys in entries map (reverse lookup)
     this.excludedFolders = [];
+    this.unresolvedPaths = /* @__PURE__ */ new Set();
+    // synthetic paths of unresolved entries
     this.recentLinks = [];
     // Recently linked note paths
     this.MAX_RECENT_LINKS = 50;
@@ -107,6 +110,7 @@ var NoteIndex = class {
     this.entries.clear();
     this.trie.clear();
     this.pathToKeys.clear();
+    this.unresolvedPaths.clear();
     const files = this.app.vault.getMarkdownFiles();
     const CHUNK_SIZE = 100;
     for (let i = 0; i < files.length; i += CHUNK_SIZE) {
@@ -120,6 +124,77 @@ var NoteIndex = class {
         await new Promise((r) => setTimeout(r, 0));
       }
     }
+    this.rebuildUnresolved();
+  }
+  /**
+   * Index link targets that have no file yet (Obsidian's "unresolved links"),
+   * so they can be suggested anywhere once at least one note links to them.
+   * Safe to call repeatedly: previous unresolved entries are dropped first.
+   */
+  rebuildUnresolved() {
+    var _a;
+    for (const path of this.unresolvedPaths) {
+      this.removeEntriesForPath(path);
+    }
+    this.unresolvedPaths.clear();
+    const unresolved = this.app.metadataCache.unresolvedLinks;
+    if (!unresolved)
+      return;
+    const found = /* @__PURE__ */ new Map();
+    for (const [sourcePath, links] of Object.entries(unresolved)) {
+      if (this.isExcluded(sourcePath))
+        continue;
+      for (const [rawLink, count] of Object.entries(links)) {
+        const name = rawLink.split("#")[0].split("|")[0].trim();
+        if (!name)
+          continue;
+        const lower = name.toLowerCase();
+        let info = found.get(lower);
+        if (!info) {
+          info = { casings: /* @__PURE__ */ new Map(), sources: /* @__PURE__ */ new Set(), total: 0 };
+          found.set(lower, info);
+        }
+        info.casings.set(name, ((_a = info.casings.get(name)) != null ? _a : 0) + count);
+        info.sources.add(sourcePath);
+        info.total += count;
+      }
+    }
+    for (const [lower, info] of found) {
+      const existing = this.entries.get(lower);
+      if (existing && existing.some((e) => !e.unresolved))
+        continue;
+      let title = lower;
+      let best = -1;
+      for (const [casing, n] of info.casings) {
+        if (n > best) {
+          best = n;
+          title = casing;
+        }
+      }
+      const path = UNRESOLVED_PREFIX + lower;
+      this.unresolvedPaths.add(path);
+      this.addEntry(title, {
+        title,
+        path,
+        isAlias: false,
+        backlinkCount: info.total,
+        unresolved: true,
+        sources: info.sources
+      });
+    }
+  }
+  /**
+   * An unresolved link that only exists in the note being edited shouldn't be
+   * suggested back to itself; it needs to be linked from at least one other note.
+   */
+  isOnlyLinkedFromCurrent(entry, currentFilePath) {
+    if (!entry.unresolved || !entry.sources || !currentFilePath)
+      return false;
+    for (const source of entry.sources) {
+      if (source !== currentFilePath)
+        return false;
+    }
+    return true;
   }
   indexFile(file) {
     var _a, _b, _c;
@@ -226,6 +301,8 @@ var NoteIndex = class {
     for (const entry of entries) {
       if (entry.path === currentFilePath)
         continue;
+      if (this.isOnlyLinkedFromCurrent(entry, currentFilePath))
+        continue;
       if (entry.title.toLowerCase() === key) {
         return { entry, key };
       }
@@ -255,6 +332,8 @@ var NoteIndex = class {
     const matches = [];
     for (const entry of prefixMatches) {
       if (entry.path === currentFilePath)
+        continue;
+      if (this.isOnlyLinkedFromCurrent(entry, currentFilePath))
         continue;
       const key = entry.title.toLowerCase().replace(/['']/g, "");
       const score = this.calculateScore(entry, "prefix", normalizedQuery, key, currentFileLinks);
@@ -938,6 +1017,16 @@ var TabLinkPlugin = class extends import_obsidian2.Plugin {
         this.noteIndex.onMetadataChanged(file);
       })
     );
+    const refreshUnresolved = (0, import_obsidian2.debounce)(
+      () => this.noteIndex.rebuildUnresolved(),
+      1e3,
+      true
+    );
+    this.registerEvent(
+      this.app.metadataCache.on("resolved", () => {
+        refreshUnresolved();
+      })
+    );
     this.setupEditorExtensions();
     this.addSettingTab(new TabLinkSettingTab(this.app, this));
   }
@@ -979,6 +1068,10 @@ var TabLinkPlugin = class extends import_obsidian2.Plugin {
             );
             if (linkedFile) {
               links.add(linkedFile.path);
+            } else {
+              const name = link.link.split("#")[0].split("|")[0].trim().toLowerCase();
+              if (name)
+                links.add("unresolved:" + name);
             }
           }
         }
@@ -1007,5 +1100,3 @@ var TabLinkPlugin = class extends import_obsidian2.Plugin {
     this.app.workspace.updateOptions();
   }
 };
-
-/* nosourcemap */
