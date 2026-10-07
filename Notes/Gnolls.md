@@ -1,13 +1,13 @@
 ---
 aliases: []
 group:
-playable:
+playable: true
 tags:
   - race/gnoll
 ---
 # Gnolls
 
-A once brutal species, Gnolls are now renowned for being among the most disciplined people of [[Ekoris]]. 
+A once brutal species, Gnolls are now renowned for being among the most disciplined people of [[🌎 Ekoris]]. 
 
 Many generations ago, when the Gnolls were still living among savage tribes in their ancestral land of [[Ashana]], a [[Nagaji]] ship was destroyed among the rocky cliffs. The sailors survived, able to make it to dry land, and after a display of strength, were able to successfully barter with a nearby gnoll tribe for supplies. 
 

@@ -9,7 +9,8 @@
     "Elves"
   ],
   "excludedFolders": [
-    "Templates"
+    "Templates",
+    "Components"
   ],
   "disabledFolders": [],
   "underlineStyle": "dotted",

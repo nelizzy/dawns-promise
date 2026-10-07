@@ -1,0 +1,15 @@
+{
+  "title": "Dawn's Promise",
+  "home": "🏠 Home",
+  "base": "",
+  "exclude": [
+    "Components",
+    "Noel Meta",
+    "Templates"
+  ],
+  "timezone": "Europe/Copenhagen",
+  "library": [
+    "Components"
+  ],
+  "icon": "src/dawns_promise_icon.webp"
+}

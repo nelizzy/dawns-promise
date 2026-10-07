@@ -3,14 +3,16 @@
     "/": {
       "isPinned": false,
       "isHidden": false,
-      "sortOrder": "custom",
+      "sortOrder": "byNameAsc",
       "customOrder": [
-        "Sessions",
-        "Templates",
-        "Notes",
         "Noel Meta",
+        "Templates",
+        "Components",
+        "Notes",
+        "Sessions",
         "🏠 Home.md",
-        "📋 Jobs.md"
+        "📋 Jobs.md",
+        "🌎 Ekoris.md"
       ]
     },
     "Sessions": {
@@ -20,12 +22,6 @@
       "customOrder": [
         "2026-10-04.md"
       ]
-    },
-    "Sessions/2026-10-04.md": {
-      "isPinned": false,
-      "isHidden": false,
-      "ctime": 1791133289848,
-      "mtime": 1791315788220
     },
     "Templates": {
       "isPinned": false,
@@ -44,6 +40,10 @@
       "isHidden": false,
       "sortOrder": "byNameAsc",
       "customOrder": [
+        "Darfellan Raiders.md",
+        "Ore Shortage.md",
+        "A Faire's Ill Portents.md",
+        "The Bone Thief.md",
         "Caravan Job.md",
         "Clear Keep Clearwater.md",
         "Incendiary Dreams.md",
@@ -97,7 +97,6 @@
         "Baron Jaques.md",
         "Varka.md",
         "Alice Bjornson.md",
-        "Ekoris.md",
         "Humans.md",
         "Dwarves.md",
         "Sun Elves.md",
@@ -149,7 +148,7 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791292492842,
-      "mtime": 1791318874775
+      "mtime": 1791383713767
     },
     "Notes/Laurel.md": {
       "isPinned": false,
@@ -240,12 +239,6 @@
       "isHidden": false,
       "ctime": 1791292585420,
       "mtime": 1791318688717
-    },
-    "Notes/Ekoris.md": {
-      "isPinned": false,
-      "isHidden": false,
-      "ctime": 1791292639226,
-      "mtime": 1791314102510
     },
     "Templates/Country.md": {
       "isPinned": false,
@@ -395,13 +388,13 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791321021786,
-      "mtime": 1791324924910
+      "mtime": 1791383220645
     },
     "Notes/Keep Clearwater.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791320049865,
-      "mtime": 1791320698866
+      "mtime": 1791383797393
     },
     "Templates/Create Template.md": {
       "isPinned": false,
@@ -413,31 +406,31 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791321541838,
-      "mtime": 1791322648544
+      "mtime": 1791378803458
     },
     "Notes/Dwarves.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791321541851,
-      "mtime": 1791322846806
+      "mtime": 1791378798920
     },
     "Notes/Sun Elves.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791321541859,
-      "mtime": 1791323040543
+      "mtime": 1791378812329
     },
     "Notes/Wild Elves.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791321541868,
-      "mtime": 1791322909294
+      "mtime": 1791378816639
     },
     "Notes/Drow.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791321541875,
-      "mtime": 1791323072959
+      "mtime": 1791378796696
     },
     "Notes/Star Elves.md": {
       "isPinned": false,
@@ -449,43 +442,43 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791321541892,
-      "mtime": 1791323336991
+      "mtime": 1791378791788
     },
     "Notes/Tieflings.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791321541900,
-      "mtime": 1791322370239
+      "mtime": 1791378814558
     },
     "Notes/Nagaji.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791321541908,
-      "mtime": 1791322346346
+      "mtime": 1791378807829
     },
     "Notes/Orcs.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791321541918,
-      "mtime": 1791323031757
+      "mtime": 1791378810113
     },
     "Notes/Catfolk.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791321541925,
-      "mtime": 1791323320180
+      "mtime": 1791378794564
     },
     "Notes/Gnolls.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791321541935,
-      "mtime": 1791323213250
+      "mtime": 1791378801115
     },
     "Notes/Kitsune.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791321541942,
-      "mtime": 1791322498418
+      "mtime": 1791378805707
     },
     "Notes/Elves.md": {
       "isPinned": false,
@@ -528,7 +521,7 @@
       "mtime": 1791323990672
     },
     "🏠 Home.md": {
-      "isPinned": true,
+      "isPinned": false,
       "isHidden": false,
       "ctime": 1791324077079,
       "mtime": 1791324176673
@@ -537,34 +530,117 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791324177534,
-      "mtime": 1791324826700
+      "mtime": 1791383272607
     },
     "Notes/Beast Hunt.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791324265281,
-      "mtime": 1791324977236
+      "mtime": 1791382957921
     },
     "Notes/Incendiary Dreams.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791324847446,
-      "mtime": 1791324991143
+      "mtime": 1791382957999
     },
     "Notes/Clear Keep Clearwater.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791325019058,
-      "mtime": 1791325064652
+      "mtime": 1791383797343
     },
     "Notes/Caravan Job.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791325097927,
-      "mtime": 1791325097927
+      "mtime": 1791382957963
+    },
+    "Components": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "Scripts",
+        "Card.md",
+        "Chips.md",
+        "Description.md"
+      ],
+      "ctime": 1791372672821,
+      "mtime": 1791372672821
+    },
+    "🌎 Ekoris.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791292639226,
+      "mtime": 1791380927781
+    },
+    "Components/Card.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791375551219,
+      "mtime": 1791380731883
+    },
+    "Components/Chips.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791375551602,
+      "mtime": 1791382075296
+    },
+    "Components/Description.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791375552073,
+      "mtime": 1791379828963
+    },
+    "Notes/The Bone Thief.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791382484671,
+      "mtime": 1791383728317
+    },
+    "Components/Scripts": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "discord-job-grabber.js"
+      ],
+      "ctime": 1791382398931,
+      "mtime": 1791382398931
+    },
+    "Components/Scripts/discord-job-grabber.js": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791382399918,
+      "mtime": 1791382399918
+    },
+    "Notes/A Faire's Ill Portents.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791382895919,
+      "mtime": 1791382958031
+    },
+    "Notes/Ore Shortage.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791383047866,
+      "mtime": 1791383210432
+    },
+    "Notes/Darfellan Raiders.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791383306364,
+      "mtime": 1791383306364
+    },
+    "Sessions/2026-10-04.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791133289848,
+      "mtime": 1791383823854
     }
   },
-  "showHidden": false,
+  "showHidden": true,
   "hidePatterns": [],
   "newItemPlacement": "bottom",
   "persistOrderOnCreateDelete": false,

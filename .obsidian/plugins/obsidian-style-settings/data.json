@@ -56,7 +56,7 @@
   "baseline-style@@bases-block-width": "bases-wide",
   "baseline-style@@image-block-width": "img-wide",
   "baseline-style@@line-width": "75ch",
-  "baseline-style@@line-width-wide": "60cqw",
+  "baseline-style@@line-width-wide": "80ch",
   "baseline-style@@inline-title-size": "1.5rem",
   "baseline-style@@inline-title-align": "center",
   "baseline-style@@inline-title-weight": 450,

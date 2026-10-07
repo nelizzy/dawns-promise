@@ -33,7 +33,7 @@ aliases:
 ---
 # The Bodin Union
 
-The Bodin Union is one of the two major controlling powers on [[Ekoris]]. 
+The Bodin Union is one of the two major controlling powers on [[🌎 Ekoris]]. 
 
 A mighty nation, originally formed of an alliance of [[dwarves]] and [[humans|men]], although since expanded to include many, and controlled by an elite council of 27. The Bodin Union wields the most military & economic power on the continent. 
 

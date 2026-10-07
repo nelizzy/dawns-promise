@@ -1,10 +1,11 @@
 ---
-status: "Rejected"
-reward: "All you can carry away"
-job_tags: ["Combat","Politics"]
+status: Rejected
+reward: All you can carry away
+job_tags:
+  - Combat
+  - Politics
 date_listed: 2026-09-03
-date_closed: 
-last_updated: 2026-09-03
+date_closed:
 tags:
   - job
 ---

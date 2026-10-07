@@ -1,7 +1,7 @@
 ---
 aliases: []
 group:
-playable:
+playable: true
 tags:
   - race/kitsune
 ---

@@ -6,7 +6,6 @@ job_tags:
   - Monster Hunt
 date_listed: 2026-08-25
 date_closed: 2026-09-06
-last_updated: 2026-09-03
 tags:
   - job
 ---

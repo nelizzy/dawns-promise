@@ -29,7 +29,7 @@ aliases:
 ---
 # Harath
 
-A land of sweltering heat and tropical jungle, Harath is the ancestral home of the [[Drow]] of [[Ekoris]]. 
+A land of sweltering heat and tropical jungle, Harath is the ancestral home of the [[Drow]] of [[🌎 Ekoris]]. 
 
 A dangerous land to outsiders, many who leave the cities unaccompanied become prey to the beasts that stalk the jungles. 
 

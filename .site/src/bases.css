@@ -1,0 +1,52 @@
+/* Bases: layout for the Obsidian-style DOM produced by bases-boot.js (colours come from the theme's --bases-* variables). */
+.bases-embed { width: 100%; margin: var(--size-4-2, 8px) 0; }
+.bases-view-host { position: relative; }
+.bases-header { display: flex; align-items: center; justify-content: space-between; border-bottom: var(--bases-header-border-width, 0) solid var(--background-modifier-border); padding: 2px 0; }
+.bases-toolbar { display: flex; align-items: center; gap: var(--size-4-2, 8px); width: 100%; font-size: var(--font-ui-small, 13px); color: var(--text-muted); }
+.bases-toolbar-count { margin-left: auto; color: var(--text-faint); }
+.bases-toolbar-view-name { font-weight: var(--font-medium, 500); color: var(--text-normal); }
+.bases-toolbar select.dropdown { font-size: var(--font-ui-small, 13px); }
+.bases-view { width: 100%; }
+.bases-empty { padding: var(--size-4-4, 16px); color: var(--text-faint); text-align: center; }
+.bases-notice { margin: 6px 0; }
+.bases-cell-error { color: var(--text-error, #e5484d); cursor: help; border-bottom: 1px dotted currentColor; font-size: .9em; }
+
+/* table */
+.bases-table-container { overflow-x: auto; width: 100%; }
+.bases-table { min-width: 100%; width: max-content; font-size: var(--font-ui-small, 14px); --bases-cols: 1fr; }
+.bases-tr { display: grid; grid-template-columns: var(--bases-cols); align-items: stretch; border-bottom: 1px solid var(--bases-table-border-color, var(--background-modifier-border)); }
+.bases-thead .bases-tr { border-bottom: 1px solid var(--bases-table-border-color, var(--background-modifier-border)); background: var(--bases-table-header-background); }
+.bases-td { padding: 4px var(--size-4-2, 8px); min-width: 0; overflow: hidden; }
+.bases-table-header { color: var(--bases-table-header-color, var(--text-muted)); font-weight: var(--font-medium, 500); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bases-table-cell { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 6px; min-height: 1.6em; overflow-wrap: anywhere; }
+.bases-tbody .bases-tr:hover { background: var(--bases-table-row-background-hover); }
+.bases-group-row { grid-template-columns: 1fr; background: var(--bases-table-group-background, transparent); }
+.bases-group-heading { font-weight: var(--font-medium, 500); padding: 4px 0; }
+.bases-group-heading-property { color: var(--bases-group-heading-property-color, var(--text-muted)); font-weight: normal; }
+.bases-group-heading-count { color: var(--text-faint); font-weight: normal; font-size: .85em; }
+.bases-summary-row { background: var(--bases-table-summary-background); border-bottom: 0; }
+.bases-table-summary { color: var(--text-muted); font-size: .9em; }
+.bases-summary-label { color: var(--text-faint); }
+.bases-checkbox { margin: 0; }
+
+/* cards */
+.bases-cards-container { display: flex; flex-direction: column; gap: var(--size-4-2, 8px); background: var(--bases-cards-container-background, transparent); padding: var(--size-4-2, 8px) 0; }
+.bases-cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--bases-cards-min, 200px), 1fr)); gap: var(--size-4-3, 12px); }
+.bases-cards-item { background: var(--bases-cards-background, var(--background-primary)); border: 1px solid var(--background-modifier-border); border-radius: var(--radius-m, 8px); overflow: hidden; display: flex; flex-direction: column; }
+.bases-cards-cover { background-color: var(--bases-cards-cover-background, var(--background-primary-alt)); background-position: center; background-repeat: no-repeat; aspect-ratio: 1.6 / 1; width: 100%; }
+.bases-cards-label { font-weight: var(--font-semibold, 600); padding: var(--size-4-2, 8px) var(--size-4-3, 12px) 2px; }
+.bases-cards-line { padding: 2px var(--size-4-3, 12px); color: var(--text-muted); font-size: var(--font-ui-smaller, 12px); }
+.bases-cards-line:last-child { padding-bottom: var(--size-4-3, 12px); }
+.bases-cards-group-heading { margin-top: var(--size-4-3, 12px); }
+
+/* list */
+.bases-list { margin: 4px 0; padding-inline-start: 1.4em; }
+.bases-list-nomarker { list-style: none; padding-inline-start: 0; }
+.bases-list-property { color: var(--text-muted); }
+.bases-list-sub { margin-inline-start: 1em; color: var(--text-muted); font-size: .9em; }
+
+/* anything unsupported is shown, not hidden */
+.site-unsupported { margin: 8px 0; }
+.nav-file-tag { margin-inline-start: auto; font-size: 10px; text-transform: uppercase; color: var(--text-faint); padding: 0 4px; }
+.bases-cards-label a, .bases-cards-label a.internal-link { color: var(--text-normal); text-decoration: none; }
+.bases-cards-label a:hover { color: var(--text-accent); }

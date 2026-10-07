@@ -3,7 +3,7 @@ aliases:
   - Dwarf
   - Dwarven
 group:
-playable:
+playable: true
 tags:
   - race/dwarf
 ---

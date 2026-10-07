@@ -1,0 +1,11 @@
+/* Make H1s (text and their underline) as wide as Baseline's wide blocks (tables, Datacore views).
+   Uses the same variables as Baseline's "Table block width" setting, so it follows that setting. */
+body:not(.block-width-off):is(.table-wide, .table-max, .table-100) .markdown-preview-sizer > .el-h1,
+body:not(.block-width-off):is(.table-wide, .table-max, .table-100) .cm-content > .HyperMD-header-1,
+body:not(.block-width-off) div:is(.table-wide, .table-max, .table-100) .markdown-preview-sizer > .el-h1,
+body:not(.block-width-off) div:is(.table-wide, .table-max, .table-100) .cm-content > .HyperMD-header-1 {
+  max-width: var(--table-line-max-width) !important;
+  width: var(--table-line-width) !important;
+  justify-self: center;
+  margin-inline: var(--table-line-width-offset) !important;
+}

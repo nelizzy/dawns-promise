@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Kitsune.md",
-                "mode": "source",
-                "source": false
+                "file": "🏠 Home.md",
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "Kitsune"
+              "title": "🏠 Home"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "📋 Jobs.md",
+                "file": "Notes/The Bone Thief.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Ashport Militia.md",
+                "file": "📋 Jobs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -176,7 +176,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Notes/Kitsune.md"
+                "file": "🏠 Home.md"
               },
               "icon": "lucide-info",
               "title": "File properties"
@@ -200,8 +200,8 @@
             "state": {
               "type": "link-plus-dashboard",
               "state": {},
-              "icon": "link",
-              "title": "Link Plus"
+              "icon": "lucide-ghost",
+              "title": "link-plus-dashboard"
             }
           }
         ],
@@ -209,7 +209,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 354.2999267578125
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -232,38 +232,41 @@
   },
   "active": "f12aa6317f8de1f4",
   "lastOpenFiles": [
-    "Notes/Politics and Organizations of Ashport.md",
-    "Notes/Storgul Longcleaver.md",
-    "Notes/Orcs.md",
-    "Notes/Ashport.md",
-    "Notes/Ashport Dockworkers United.md",
-    "🏠 Home.md",
-    "📋 Jobs.md",
-    "Notes/Caravan Job.md",
-    "Notes/Beast Hunt.md",
+    "Components/dawns_promise.webp",
     "Templates/Job.md",
-    "Notes/Noel.md",
-    "Notes/Harath.md",
-    "Notes/Clear Keep Clearwater.md",
-    "Notes/Incendiary Dreams.md",
-    "Notes/Wild Elves.md",
-    "organization.md",
-    "Templates/Import Races.md",
-    "Noel Meta/Wishlist.md",
-    "Noel Meta",
+    "Templates/Country.md",
+    "Templates/Create Template.md",
     "Sessions/2026-10-04.md",
-    "Unresolved Notes.md",
-    "Notes/Torvald Bjornson.md",
-    "Notes/The Hassan Dynasty.md",
+    "📋 Jobs.md",
+    "Notes/The Bone Thief.md",
+    "Notes/Jaques' Voyagers.md",
+    "Notes/Darfellan Raiders.md",
+    "Notes/Fire Bloods.md",
+    "Notes/Ore Shortage.md",
+    "Notes/Beast Hunt.md",
+    "Notes/A Faire's Ill Portents.md",
+    "🏠 Home.md",
+    "Notes/Tasnari Marines.md",
+    "Components/Scripts/discord-job-grabber.js",
+    "Components/Scripts",
+    "Notes/Clear Keep Clearwater.md",
+    "🌎 Ekoris.md",
+    "Notes/Keep Clearwater.md",
     "Notes/Merchant's Union.md",
-    "Notes/Betan's Legacy.md",
-    "Notes/Ashport Militia.md",
-    "Notes/Varka.md",
-    "Untitled.base",
-    "Notes",
-    "Templates",
-    "Sessions",
-    "Party",
-    "desktop.ini"
+    "Notes/Crimson Serenity.md",
+    "Notes/Aasimar.md",
+    "Components/Chips.md",
+    "Components/Card.md",
+    "Notes/Wild Elves.md",
+    "Components/Description.md",
+    "Notes/Tieflings.md",
+    "Claude outputs/main.patched-clean.js",
+    "Claude outputs/apply_amc_embed_columns_patch.py",
+    "Claude outputs",
+    "Components/Card.jsx",
+    "Components/Description.jsx",
+    "Components/Chips.jsx",
+    "Components",
+    "Noel Meta"
   ]
 }

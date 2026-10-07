@@ -1,10 +1,11 @@
 ---
-status: "Completed"
-reward: "Owed favor from the Desnan Priestess"
-job_tags: ["Mystery","Investigation"]
+status: Completed
+reward: Owed favor from the Desnan Priestess
+job_tags:
+  - Mystery
+  - Investigation
 date_listed: 2026-08-25
 date_closed: 2026-10-07
-last_updated: 2026-09-03
 tags:
   - job
 ---

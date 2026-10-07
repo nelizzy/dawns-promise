@@ -3,6 +3,9 @@ tags:
   - organization
   - organization/mercenary
   - tasnan/ashport
+aliases:
+  - Fireblood
+  - Firebloods
 ---
 # Fire Bloods
 The Fire Bloods are another mercenary company operating in [[Ashport]]. 

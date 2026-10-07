@@ -40,7 +40,7 @@ aliases:
 ---
 # The Hassan Dynasty
 
-The other major power of [[Ekoris]]. 
+The other major power of [[🌎 Ekoris]]. 
 
 An absolute monarchy, the dynasty does not represent a typical line of lineage. 
 

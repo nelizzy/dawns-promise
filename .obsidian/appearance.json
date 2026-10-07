@@ -6,6 +6,8 @@
   "showRibbon": true,
   "nativeMenus": false,
   "enabledCssSnippets": [
-    "columns"
+    "columns",
+    "wide-h1",
+    "wide-contain"
   ]
 }
