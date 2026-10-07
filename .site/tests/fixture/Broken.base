@@ -1,0 +1,7 @@
+filters: 'file.name.nope('
+views:
+  - type: table
+    name: Oops
+  - type: calendar
+    name: Cal
+mystery: true

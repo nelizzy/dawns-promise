@@ -1,0 +1,48 @@
+
+.columns-container {
+	--amc-container-bg: var(--amc-bg-primary, var(--background-primary));
+	--amc-container-text: var(--amc-color-text, var(--text-normal));
+	--amc-container-border-width: 0px;
+	--amc-container-border-color: var(--amc-color-gray, var(--background-modifier-border));
+	--amc-container-radius: 8px;
+	--amc-divider-style: solid;
+	--amc-divider-color: var(--amc-color-gray, var(--background-modifier-border));
+}
+
+
+.columns-container {
+	--amc-divider-width: 1px;
+}
+
+
+@container amc-columns (max-width: 460px) {
+	.columns-container:not(.columns-stacked) {
+		flex-direction: column !important;
+	}
+
+	.columns-container:not(.columns-stacked) > :is(.column-item, .columns-stack-group) {
+		flex: none !important;
+		width: 100% !important;
+	}
+
+	.columns-container:not(.columns-stacked) > .column-resize-handle {
+		display: none !important;
+	}
+
+	.columns-container:not(.columns-stacked) > .column-separator-visual {
+		width: 100%;
+		flex: 0 0 auto;
+		border-left: none;
+		border-top: var(--sep-width, 1px) var(--sep-style, solid) var(--sep-color, var(--background-modifier-border));
+		margin: 2px 8px;
+	}
+
+	.columns-container:not(.columns-stacked) > .column-separator-custom {
+		writing-mode: horizontal-tb;
+		width: 100%;
+	}
+
+	.columns-container.columns-reading:not(.columns-stacked) > :is(.column-item, .columns-stack-group)::before {
+		display: none;
+	}
+}

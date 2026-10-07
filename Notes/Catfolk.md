@@ -1,7 +1,7 @@
 ---
 aliases: []
 group:
-playable:
+playable: true
 tags:
   - race/catfolk
 ---
@@ -17,4 +17,4 @@ Those who choose the [[Path of the Stalker]] find their senses sharpening far be
 
 Those who instead choose the [[Path of the Traveller]] experience a powerful wanderlust, driving them out from [[Harath]] with a strong desire to explore and experience. They find their ability to pick up languages and dialects greatly enhanced, and can quickly gain insights into the social cues of another culture after very brief interaction.
 
-Catfolk have a strong love of challenges and competitions, and an even stronger love of winning. Catfolk who travel the [[Path of the Stalker]] will often seek out greater and greater boasts, sneaking past or stealing from increasingly deadly beasts or settlements. Those walking the [[Path of the Traveller]] can be found all over [[Ekoris]], often becoming influential figures and wealthy merchants, seeing society itself as a game to be played, and one they much enjoy to win.
+Catfolk have a strong love of challenges and competitions, and an even stronger love of winning. Catfolk who travel the [[Path of the Stalker]] will often seek out greater and greater boasts, sneaking past or stealing from increasingly deadly beasts or settlements. Those walking the [[Path of the Traveller]] can be found all over [[🌎 Ekoris]], often becoming influential figures and wealthy merchants, seeing society itself as a game to be played, and one they much enjoy to win.

@@ -7,7 +7,7 @@ aliases:
   - Wood Elf
   - Ghoul Elf
 group: Elves
-playable:
+playable: true
 tags:
   - race/elf
   - race/elf/wild

@@ -1,7 +1,7 @@
 ---
 aliases: []
 group: Elves
-playable:
+playable: true
 tags:
   - race/elf
   - race/elf/drow

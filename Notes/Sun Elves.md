@@ -2,7 +2,7 @@
 aliases:
   - Sun Elf
 group: Elves
-playable:
+playable: true
 tags:
   - race/elf/sun
   - race/elf

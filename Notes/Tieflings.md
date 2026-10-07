@@ -4,7 +4,7 @@ aliases:
   - Tiefling
   - Devil
 group:
-playable:
+playable: true
 tags:
   - race/tiefling
 ---

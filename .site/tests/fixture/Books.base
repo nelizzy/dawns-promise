@@ -1,0 +1,55 @@
+filters:
+  and:
+    - file.inFolder("Books")
+formulas:
+  label: file.basename + " (" + year + ")"
+  age: if(finished, (today() - finished).days.round(), "")
+  value: price * 2
+properties:
+  formula.label:
+    displayName: Title
+  status:
+    displayName: Reading status
+summaries:
+  total: values.sum()
+views:
+  - type: table
+    name: Table
+    order:
+      - formula.label
+      - author
+      - year
+      - price
+      - read
+      - tags
+      - formula.age
+    sort:
+      - property: year
+        direction: DESC
+    summaries:
+      price: Average
+      year: Max
+      read: Checked
+  - type: table
+    name: Grouped
+    groupBy:
+      property: status
+      direction: ASC
+    order:
+      - file.name
+      - price
+    summaries:
+      price: total
+  - type: cards
+    name: Cards
+    image: note.cover
+    order:
+      - file.name
+      - author
+      - formula.value
+  - type: list
+    name: List
+    limit: 2
+    order:
+      - file.name
+      - year

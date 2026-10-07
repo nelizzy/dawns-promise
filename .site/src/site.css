@@ -1,0 +1,86 @@
+/* the sidebar search has its own clear button; hide the browser's native one (the blue "x") */
+#site-search::-webkit-search-cancel-button, #site-search::-webkit-search-decoration { -webkit-appearance: none; appearance: none; display: none; }
+#site-search { appearance: none; -webkit-appearance: none; }
+
+/* ---- note "card": Baseline's layout puts the note on a darker (primary) layer over the lighter (secondary) frame ---- */
+.workspace-split.mod-root { padding: 8px; box-sizing: border-box; }
+.workspace-split.mod-root .workspace-tabs.mod-top { background: var(--background-primary); border-radius: var(--tab-radius, var(--radius-m, 8px)); overflow: hidden; }
+@media (max-width: 800px) {
+  .workspace-split.mod-root { padding: 0; }
+  .workspace-split.mod-root .workspace-tabs.mod-top { border-radius: 0; }
+}
+
+/* ---- the note pane is the size container Baseline's wide blocks measure (cqw), as .workspace-tab-container is in Obsidian ---- */
+.workspace-split.mod-root .view-content { container: note / inline-size; }
+
+/* ---- header: always visible, same background as the content ---- */
+.view-header { background: var(--background-primary) !important; }
+.view-header .view-header-title-container > div { opacity: 1 !important; visibility: visible !important; }
+
+/* ---- metadata properties: vertically centred ---- */
+.metadata-property { align-items: center !important; }
+.metadata-property-key, .metadata-property-value { align-items: center; }
+.metadata-property-value .multi-select-container { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
+.metadata-property-value .multi-select-pill { text-decoration: none; }
+
+/* ---- scrollbars: blend into the background, never shift the layout ---- */
+html { scrollbar-gutter: stable; }
+* { scrollbar-width: thin; scrollbar-color: var(--scrollbar-thumb-bg, rgba(255,255,255,.12)) transparent; }
+*:hover { scrollbar-color: var(--scrollbar-active-thumb-bg, rgba(255,255,255,.22)) transparent; }
+.view-content, .nav-files-container, .bases-table-container, .markdown-rendered .el-table, .markdown-rendered pre { scrollbar-gutter: stable; }
+.markdown-rendered .el-table, .markdown-rendered pre, .bases-table-container { scrollbar-gutter: auto; }
+::-webkit-scrollbar { width: 10px; height: 10px; background: transparent; }
+::-webkit-scrollbar-track, ::-webkit-scrollbar-corner { background: transparent; }
+
+/* ---- sidebar title tools ---- */
+.site-title { display: flex; align-items: center; justify-content: space-between; }
+.site-title-tools { display: flex; gap: 2px; }
+.site-title-tools .clickable-icon { color: var(--text-muted); display: inline-flex; padding: 4px; border-radius: var(--clickable-icon-radius, 6px); }
+.site-title-tools .clickable-icon:hover { background: var(--background-modifier-hover); color: var(--text-normal); }
+.site-title-tools svg { width: 18px; height: 18px; }
+
+/* ---- links pane (backlinks / outgoing / local graph) ---- */
+.site-links-pane { margin-top: var(--size-4-12, 48px); padding-top: var(--size-4-4, 16px); border-top: 1px solid var(--background-modifier-border); font-size: var(--font-ui-small, 13px); color: var(--text-muted); }
+.site-links-title { display: flex; align-items: center; gap: 6px; font-weight: var(--font-semibold, 600); color: var(--text-normal); margin-bottom: 6px; }
+.site-links-title svg { width: 16px; height: 16px; }
+.site-links-section > summary { list-style: none; display: flex; align-items: center; gap: 4px; cursor: pointer; padding: 4px 2px; }
+.site-links-section > summary::-webkit-details-marker { display: none; }
+.site-links-section .collapse-icon, .site-links-section .collapse-icon svg { transform: none !important; }
+.site-links-section[open] > summary .collapse-icon svg { transform: rotate(0deg) !important; }
+.site-links-section:not([open]) > summary .collapse-icon svg { transform: rotate(-90deg) !important; }
+.site-links-section .tree-item-flair { margin-inline-start: auto; color: var(--text-faint); font-size: var(--font-ui-smaller, 12px); }
+.site-links-section .tree-item-flair-outer { margin-inline-start: auto; }
+.search-result { padding: 3px 0; }
+.search-result-file-title { color: var(--text-normal); text-decoration: none; display: block; padding: 2px 6px; border-radius: var(--radius-s, 4px); }
+.search-result-file-title:hover { background: var(--background-modifier-hover); }
+.search-result-file-matches { margin-inline-start: 8px; }
+.search-result-file-match { color: var(--text-muted); font-size: var(--font-ui-smaller, 12px); padding: 2px 6px; overflow-wrap: anywhere; }
+.search-result-file-match mark { background: var(--text-highlight-bg, rgba(255,208,0,.3)); color: inherit; border-radius: 2px; }
+.search-result-folder { color: var(--text-faint); font-size: var(--font-ui-smaller, 12px); padding: 0 6px; }
+.search-empty-state, .site-search-count { color: var(--text-faint); padding: 6px; font-size: var(--font-ui-small, 13px); }
+.site-links-tags { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 4px; }
+.site-faint { color: var(--text-faint); font-size: .85em; }
+.site-tag-list { list-style: none; padding: 0; columns: 2 220px; }
+.site-tag-list li { padding: 2px 0; }
+
+/* ---- graph ---- */
+.site-graph { position: relative; }
+.site-graph-canvas { width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; }
+.site-local-graph { height: 260px; margin-top: 12px; border: 1px solid var(--background-modifier-border); border-radius: var(--radius-m, 8px); overflow: hidden; }
+.site-graph-page { height: calc(100vh - var(--header-height, 40px) - 24px); display: flex; flex-direction: column; margin: 0 calc(var(--file-margins, 32px) * -1); }
+.site-graph-page .site-graph-canvas { flex: 1 1 auto; min-height: 0; }
+.site-graph-controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding: 8px 12px; color: var(--text-muted); font-size: var(--font-ui-small, 13px); }
+.site-graph-controls label { display: inline-flex; align-items: center; gap: 4px; }
+.site-graph-filter { flex: 1 1 220px; max-width: 320px; }
+.site-graph-tip { position: absolute; display: none; pointer-events: none; background: var(--background-primary); border: 1px solid var(--background-modifier-border); padding: 2px 8px; border-radius: 6px; font-size: 12px; color: var(--text-normal); z-index: 2; }
+.markdown-preview-view:has(#graph-root) { padding: 0 !important; }
+.markdown-preview-sizer:has(#graph-root) { max-width: none !important; width: 100% !important; margin: 0 !important; padding: 0 !important; }
+.site-graph-page { margin: 0 !important; height: calc(100vh - var(--header-height, 40px)); }
+.site-graph-filter { background: var(--background-modifier-form-field, var(--background-primary)); color: var(--text-normal); border: 1px solid var(--background-modifier-border); border-radius: var(--input-radius, 6px); padding: 4px 8px; }
+
+/* Links: no underlines. Unresolved internal links are quiet (75% surrounding text colour, 25% accent). */
+a, a:hover, a.internal-link, .markdown-rendered a.internal-link, a.internal-link:hover { text-decoration: none !important; }
+a.internal-link.is-unresolved, .markdown-rendered a.internal-link.is-unresolved, a.internal-link.is-unresolved:hover {
+  color: color-mix(in oklch, currentColor 75%, var(--text-accent) 25%);
+  opacity: 1; cursor: default; text-decoration: none !important;
+}

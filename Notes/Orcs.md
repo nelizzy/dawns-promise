@@ -6,7 +6,7 @@ aliases:
   - Half Orcs
   - Half Orc
 group:
-playable:
+playable: true
 tags:
   - race/orc
 ---

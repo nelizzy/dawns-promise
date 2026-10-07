@@ -1,0 +1,19 @@
+/* Baseline sizes "wide" blocks (tables, Datacore/Dataview blocks, bases, images, and my wide H1s) from
+   100cqw, the width of the whole pane. That's fine for blocks directly in a note, but inside an embed,
+   column, callout or quote it ignores the actual container and overflows it. Regular-width blocks just fill
+   their container (capped at the line width), so do the same here: in those nested contexts a wide block is
+   at most as wide as its container. Directly-in-the-note blocks keep their wide width. */
+body:not(.block-width-off):not(.x1):not(.x2):not(.x3)
+  :is(.markdown-embed, .internal-embed, .callout, blockquote, .columns-container, .columns-rv-wrapper,
+      .columns-rv-segment, .column-preview, .column-inline-edit-preview)
+  :is(.el-table, .el-h1, .el-iframe,
+      .el-pre :is(.block-language-datacorejsx, .block-language-dataview, .block-language-dataviewjs, .bases-embed),
+      .el-p .bases-embed, .el-p p:has(img),
+      .cm-table-widget, .cm-lang-datacorejsx, .cm-lang-dataview, .cm-lang-dataviewjs, .cm-lang-base,
+      .bases-embed, .image-embed, .HyperMD-header-1) {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-inline: 0 !important;
+  justify-self: stretch;
+  box-sizing: border-box;
+}

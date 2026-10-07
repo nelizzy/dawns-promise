@@ -32,7 +32,7 @@ tags:
 ---
 # Na-Boa
 
-Transitioning out of the frozen lands of [[Astya]], Na-Boa is the ancestral home of the [[Naga]] and [[Nagaji]] of [[Ekoris]]. 
+Transitioning out of the frozen lands of [[Astya]], Na-Boa is the ancestral home of the [[Naga]] and [[Nagaji]] of [[🌎 Ekoris]]. 
 
 While there are no great cities in Na-Boa, there are thousands of Temples, each controlled by an individual Naga and her [[Nagaji]]. 
 

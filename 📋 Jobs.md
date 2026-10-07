@@ -5,62 +5,24 @@ const m = window.moment;
 const iso = v => v?.toISODate?.() ?? String(v ?? "").slice(0, 10);
 const arr = x => (x == null ? [] : Array.isArray(x) ? x : [x]);
 
-const STATUS_ICON = { Open: "🟢", Active: "🟡", Completed: "✅", Failed: "❌", Expired: "⌛", Rejected: "🚫" };
+const STATUS_ICON = { Open: "🟢", Active: "🟡", Completed: "✔️", Failed: "❌", Expired: "⌛", Rejected: "🚫" };
 const CLOSED = ["Completed", "Failed", "Expired", "Rejected"];
 const ORDER = ["Active", "Open", "Rejected", "Completed", "Failed", "Expired"];
 const FILTERS = ["Open + Active", "All", ...ORDER];
 
-function Chips({ items, icon }) {
-  if (!items.length) return null;
-  return <div style={{ display: "flex", flexWrap: "wrap", gap: "4px" }}>
-    {items.map(i => (
-      <span key={icon + i} style={{
-        background: "var(--background-modifier-hover)",
-        borderRadius: "10px", padding: "1px 8px", fontSize: "0.85em"
-      }}>{icon ? icon + " " : ""}{i}</span>
-    ))}
-  </div>;
-}
+const { Card } = await dc.require(dc.headerLink("Components/Card.md", "Card"));
+const { Chips } = await dc.require(dc.headerLink("Components/Chips.md", "Chips"));
+const { Description } = await dc.require(dc.headerLink("Components/Description.md", "Description"));
 
-function Description({ path }) {
-  const [text, setText] = dc.useState("");
-  const [open, setOpen] = dc.useState(false);
-
-  dc.useEffect(() => {
-    let alive = true;
-    const file = dc.app.vault.getAbstractFileByPath(path);
-    if (!file) return;
-    dc.app.vault.cachedRead(file).then(raw => {
-      if (!alive) return;
-      setText(raw
-        .replace(/^---\n[\s\S]*?\n---\n?/, "")
-        .replace(/^#\s.*\n?/m, "")
-        .replace(/^>\s?/gm, "")
-        .trim());
-    });
-    return () => { alive = false; };
-  }, [path]);
-
-  if (!text) return null;
-  return <div
-    onClick={() => setOpen(!open)}
-    title={open ? "Click to collapse" : "Click to expand"}
-    style={{
-      fontSize: "0.85em", color: "var(--text-muted)", cursor: "pointer", whiteSpace: "pre-wrap",
-      ...(open ? {} : {
-        display: "-webkit-box", WebkitLineClamp: 10, WebkitBoxOrient: "vertical", overflow: "hidden",
-      }),
-    }}
-  >{text}</div>;
-}
-
-function Card({ p, sessionDates }) {
+function JobCard({ p, sessionDates }) {
   const v = k => p.value(k);
   const status = v("status") || "Open";
   const listed = m(iso(v("date_listed")), "YYYY-MM-DD", true);
   const closed = m(iso(v("date_closed")), "YYYY-MM-DD", true);
-  const edited = m(iso(v("last_updated")), "YYYY-MM-DD", true);
   const isClosed = CLOSED.includes(status);
+
+  // number of headings starting with "Update" (e.g. "## Update 1")
+  const updates = (p.$sections ?? []).filter(s => /^update\b/i.test(String(s.$title ?? "").trim())).length;
 
   // sessions after the listing day, up to the close date if there is one
   const sessions = listed.isValid()
@@ -73,30 +35,22 @@ function Card({ p, sessionDates }) {
     : isClosed && closed.isValid() ? `${sessions} session${plural} to close`
     : `${sessions} session${plural} ago`;
 
-  return <div style={{
-    border: "1px solid var(--background-modifier-border)",
-    borderRadius: "8px", padding: "12px",
-    display: "flex", flexDirection: "column", gap: "8px",
-    opacity: isClosed ? 0.7 : 1,
-  }}>
-    <div style={{ display: "flex", justifyContent: "space-between", gap: "8px" }}>
-      <span style={{ fontWeight: "bold", fontSize: "1.1em" }}><dc.Link link={p.$link} /></span>
-      <span style={{ fontSize: "0.85em", whiteSpace: "nowrap" }}>{STATUS_ICON[status] ?? "•"} {status}</span>
-    </div>
+  return <Card link={p.$link} dim={isClosed}
+    aside={<span style={{ fontSize: "0.85em", whiteSpace: "nowrap" }}>{STATUS_ICON[status] ?? "•"} {status}</span>}>
     {v("sponsor") && <div style={{ fontSize: "0.85em" }}>🤝 {v("sponsor")}</div>}
-    <Description path={p.$path} />
+    <Description path={p.$path} foldable />
     {v("reward") && <div style={{ fontSize: "0.9em" }}>💰 {v("reward")}</div>}
-    <Chips items={arr(v("job_tags"))} icon="" />
+    <Chips items={arr(v("job_tags"))} icon="" spoiler />
     <div style={{
       display: "flex", flexWrap: "wrap", gap: "2px 12px",
       fontSize: "0.75em", color: "var(--text-muted)"
     }}>
       {listed.isValid() && <span>📅 Listed {listed.format("MMM DD, YY")}</span>}
       {isClosed && closed.isValid() && <span>🔒 Closed {closed.format("MMM DD, YY")}</span>}
-      {edited.$mtime && <span>✏️ Edited {edited.format("MMM DD, YYY")}</span>}
+      {updates > 0 && <span>📝 {updates} update{updates === 1 ? "" : "s"}</span>}
             {label && <span>⏳ {label}</span>}
     </div>
-  </div>;
+  </Card>;
 }
 
 return function View() {
@@ -121,10 +75,10 @@ return function View() {
     </select>
     <div style={{
       display: "grid",
-      gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
+      gridTemplateColumns: "repeat(auto-fill, minmax(30ch, 1fr))",
       gap: "12px"
     }}>
-      {shown.map(p => <Card key={p.$path} p={p} sessionDates={sessionDates} />)}
+      {shown.map(p => <JobCard key={p.$path} p={p} sessionDates={sessionDates} />)}
     </div>
   </div>;
 }

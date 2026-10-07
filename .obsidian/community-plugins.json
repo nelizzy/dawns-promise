@@ -1,5 +1,4 @@
 [
-  "advanced-multi-column",
   "table-editor-obsidian",
   "obsidian-auto-link-title",
   "callout-manager",
@@ -20,5 +19,6 @@
   "inline-link-suggestions",
   "tab-link",
   "text-tools",
-  "github-sync"
+  "github-sync",
+  "advanced-multi-column"
 ]
