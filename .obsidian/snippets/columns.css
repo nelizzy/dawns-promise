@@ -1,0 +1,5 @@
+.columns-container.columns-ui:not(.columns-reading) :is(.column-preview, .column-inline-edit-preview) .amc-block-gap .markdown-embed p {
+  margin-top: 1em;
+  margin-block-start: 1em;
+  line-height: 1.4;
+}

@@ -1,0 +1,7 @@
+{
+  "apiEndpoint": "https://api.postimage.org/1/upload",
+  "headers": [],
+  "fileFieldName": "file",
+  "imageUrlPath": "url",
+  "pdfHandling": "default"
+}

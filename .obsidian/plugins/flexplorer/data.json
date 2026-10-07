@@ -6,31 +6,12 @@
       "sortOrder": "custom",
       "customOrder": [
         "Sessions",
-        "Dawn's Promise.md",
-        "Laurel.md",
-        "Noel.md",
-        "Sir Roland.md",
-        "Sir Taymour.md",
-        "Varka.md"
+        "Templates",
+        "Notes",
+        "Noel Meta",
+        "🏠 Home.md",
+        "📋 Jobs.md"
       ]
-    },
-    "Dawn's Promise.md": {
-      "isPinned": true,
-      "isHidden": false,
-      "ctime": 1791137604831,
-      "mtime": 1791279724201
-    },
-    "Laurel.md": {
-      "isPinned": false,
-      "isHidden": false,
-      "ctime": 1791133330134,
-      "mtime": 1791137694584
-    },
-    "Noel.md": {
-      "isPinned": true,
-      "isHidden": false,
-      "ctime": 1791133281635,
-      "mtime": 1791232619400
     },
     "Sessions": {
       "isPinned": false,
@@ -44,30 +25,548 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791133289848,
-      "mtime": 1791279598493
+      "mtime": 1791315788220
     },
-    "Sir Roland.md": {
+    "Templates": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "Create Template.md",
+        "Country.md",
+        "Job.md"
+      ],
+      "ctime": 1791309944126,
+      "mtime": 1791309944126
+    },
+    "Notes": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "byNameAsc",
+      "customOrder": [
+        "Caravan Job.md",
+        "Clear Keep Clearwater.md",
+        "Incendiary Dreams.md",
+        "Beast Hunt.md",
+        "Greed Sickness.md",
+        "Dying Curse.md",
+        "Ashana.md",
+        "Elves.md",
+        "Keep Clearwater.md",
+        "House Baramber.md",
+        "Leviathan Spawn.md",
+        "Slumbering Collective.md",
+        "Leviathan.md",
+        "Duke Betan of House Gryffon.md",
+        "House Vallier.md",
+        "Merchant's Union.md",
+        "Harath.md",
+        "Isle of Rivers.md",
+        "Illithia.md",
+        "The Hassan Dynasty.md",
+        "The Bodin Union.md",
+        "Tasnan.md",
+        "Garotha.md",
+        "The Breezes.md",
+        "Na-Boa.md",
+        "Astya.md",
+        "Ashport Dockworkers United.md",
+        "Betan's Legacy.md",
+        "Crimson Serenity.md",
+        "Dawn's Promise.md",
+        "Duke Serrifal of House Vallier.md",
+        "Fire Bloods.md",
+        "Jaques' Voyagers.md",
+        "Laurel.md",
+        "Noel.md",
+        "Politics and Organizations of Ashport.md",
+        "Roquill of the Seven Pines.md",
+        "Sir Roland.md",
+        "Sir Taymour.md",
+        "Stone Custodians.md",
+        "Storgul Longcleaver.md",
+        "Tasnari Marines.md",
+        "The Chroniclers of Rithford.md",
+        "The Gilded Compass.md",
+        "The Golden Fangs.md",
+        "The Last Lanterns.md",
+        "The Red Writ.md",
+        "Torvald Bjornson.md",
+        "Ashport Militia.md",
+        "Ashport.md",
+        "Baron Jaques.md",
+        "Varka.md",
+        "Alice Bjornson.md",
+        "Ekoris.md",
+        "Humans.md",
+        "Dwarves.md",
+        "Sun Elves.md",
+        "Wild Elves.md",
+        "Drow.md",
+        "Star Elves.md",
+        "Aasimar.md",
+        "Tieflings.md",
+        "Nagaji.md",
+        "Orcs.md",
+        "Catfolk.md",
+        "Gnolls.md",
+        "Kitsune.md"
+      ],
+      "ctime": 1791309960581,
+      "mtime": 1791309960581
+    },
+    "Notes/Ashport Dockworkers United.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791292389723,
+      "mtime": 1791319966685
+    },
+    "Notes/Betan's Legacy.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791292495567,
+      "mtime": 1791318769939
+    },
+    "Notes/Dawn's Promise.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791137604831,
+      "mtime": 1791318769965
+    },
+    "Notes/Duke Serrifal of House Vallier.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791291377553,
+      "mtime": 1791321719693
+    },
+    "Notes/Fire Bloods.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791292489447,
+      "mtime": 1791318834140
+    },
+    "Notes/Jaques' Voyagers.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791292492842,
+      "mtime": 1791318874775
+    },
+    "Notes/Laurel.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791133330134,
+      "mtime": 1791323147775
+    },
+    "Notes/Noel.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791133281635,
+      "mtime": 1791323991805
+    },
+    "Notes/Roquill of the Seven Pines.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791291368850,
+      "mtime": 1791319990539
+    },
+    "Notes/Sir Roland.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791133320426,
-      "mtime": 1791280944635
+      "mtime": 1791309708031
     },
-    "Sir Taymour.md": {
+    "Notes/Sir Taymour.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791133326071,
-      "mtime": 1791280572264
+      "mtime": 1791309708041
     },
-    "Varka.md": {
+    "Notes/Stone Custodians.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791292439120,
+      "mtime": 1791323388724
+    },
+    "Notes/Storgul Longcleaver.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791291129910,
+      "mtime": 1791325057632
+    },
+    "Notes/Tasnari Marines.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791292428848,
+      "mtime": 1791317865153
+    },
+    "Notes/The Chroniclers of Rithford.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791292445846,
+      "mtime": 1791317759954
+    },
+    "Notes/The Golden Fangs.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791292485047,
+      "mtime": 1791322114798
+    },
+    "Notes/The Last Lanterns.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791290501607,
+      "mtime": 1791314612011
+    },
+    "Notes/The Red Writ.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791292442427,
+      "mtime": 1791319751534
+    },
+    "Notes/Torvald Bjornson.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791290847427,
+      "mtime": 1791322103967
+    },
+    "Notes/Varka.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791133328596,
-      "mtime": 1791137701178
+      "mtime": 1791322089005
+    },
+    "Notes/Alice Bjornson.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791292585420,
+      "mtime": 1791318688717
+    },
+    "Notes/Ekoris.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791292639226,
+      "mtime": 1791314102510
+    },
+    "Templates/Country.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791309940102,
+      "mtime": 1791313167244
+    },
+    "Notes/Astya.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791311843320,
+      "mtime": 1791314842024
+    },
+    "Notes/Na-Boa.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791311864016,
+      "mtime": 1791321643782
+    },
+    "Notes/The Breezes.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791311883056,
+      "mtime": 1791317814595
+    },
+    "Notes/Garotha.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791311892896,
+      "mtime": 1791314423214
+    },
+    "Notes/Tasnan.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791311908307,
+      "mtime": 1791323100494
+    },
+    "Notes/The Bodin Union.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791311926899,
+      "mtime": 1791321719670
+    },
+    "Notes/The Hassan Dynasty.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791311937611,
+      "mtime": 1791321690011
+    },
+    "Notes/Illithia.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791311948250,
+      "mtime": 1791314755073
+    },
+    "Notes/Isle of Rivers.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791311960928,
+      "mtime": 1791321719686
+    },
+    "Notes/Harath.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791311968371,
+      "mtime": 1791314941122
+    },
+    "Notes/Ashport.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791314188000,
+      "mtime": 1791318682814
+    },
+    "Notes/Baron Jaques.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791314467766,
+      "mtime": 1791318734592
+    },
+    "Notes/Ashport Militia.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791314661463,
+      "mtime": 1791318702182
+    },
+    "Notes/Merchant's Union.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791315932558,
+      "mtime": 1791318896157
+    },
+    "Notes/House Vallier.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791316740697,
+      "mtime": 1791318867571
+    },
+    "Notes/Duke Betan of House Gryffon.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791316712064,
+      "mtime": 1791319736655
+    },
+    "Notes/Crimson Serenity.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791291386372,
+      "mtime": 1791318769952
+    },
+    "Notes/The Gilded Compass.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791292301063,
+      "mtime": 1791317746872
+    },
+    "Notes/Leviathan.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791317489094,
+      "mtime": 1791317583856
+    },
+    "Notes/Slumbering Collective.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791317365650,
+      "mtime": 1791317633585
+    },
+    "Notes/Leviathan Spawn.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791317519830,
+      "mtime": 1791317529319
+    },
+    "Notes/Politics and Organizations of Ashport.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791281805542,
+      "mtime": 1791318908187
+    },
+    "Notes/House Baramber.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791319913813,
+      "mtime": 1791319923914
+    },
+    "Templates/Job.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791321021786,
+      "mtime": 1791324924910
+    },
+    "Notes/Keep Clearwater.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791320049865,
+      "mtime": 1791320698866
+    },
+    "Templates/Create Template.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791321155273,
+      "mtime": 1791321312479
+    },
+    "Notes/Humans.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791321541838,
+      "mtime": 1791322648544
+    },
+    "Notes/Dwarves.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791321541851,
+      "mtime": 1791322846806
+    },
+    "Notes/Sun Elves.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791321541859,
+      "mtime": 1791323040543
+    },
+    "Notes/Wild Elves.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791321541868,
+      "mtime": 1791322909294
+    },
+    "Notes/Drow.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791321541875,
+      "mtime": 1791323072959
+    },
+    "Notes/Star Elves.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791321541885,
+      "mtime": 1791322294130
+    },
+    "Notes/Aasimar.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791321541892,
+      "mtime": 1791323336991
+    },
+    "Notes/Tieflings.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791321541900,
+      "mtime": 1791322370239
+    },
+    "Notes/Nagaji.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791321541908,
+      "mtime": 1791322346346
+    },
+    "Notes/Orcs.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791321541918,
+      "mtime": 1791323031757
+    },
+    "Notes/Catfolk.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791321541925,
+      "mtime": 1791323320180
+    },
+    "Notes/Gnolls.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791321541935,
+      "mtime": 1791323213250
+    },
+    "Notes/Kitsune.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791321541942,
+      "mtime": 1791322498418
+    },
+    "Notes/Elves.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791321772743,
+      "mtime": 1791322657237
+    },
+    "Notes/Ashana.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791322420854,
+      "mtime": 1791322455110
+    },
+    "Notes/Dying Curse.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791322715807,
+      "mtime": 1791323794765
+    },
+    "Notes/Greed Sickness.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791322732393,
+      "mtime": 1791323802184
+    },
+    "Noel Meta": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "Wishlist.md"
+      ],
+      "ctime": 1791323961523,
+      "mtime": 1791323961523
+    },
+    "Noel Meta/Wishlist.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791281691864,
+      "mtime": 1791323990672
+    },
+    "🏠 Home.md": {
+      "isPinned": true,
+      "isHidden": false,
+      "ctime": 1791324077079,
+      "mtime": 1791324176673
+    },
+    "📋 Jobs.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791324177534,
+      "mtime": 1791324826700
+    },
+    "Notes/Beast Hunt.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791324265281,
+      "mtime": 1791324977236
+    },
+    "Notes/Incendiary Dreams.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791324847446,
+      "mtime": 1791324991143
+    },
+    "Notes/Clear Keep Clearwater.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791325019058,
+      "mtime": 1791325064652
+    },
+    "Notes/Caravan Job.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791325097927,
+      "mtime": 1791325097927
     }
   },
   "showHidden": false,
   "hidePatterns": [],
-  "newItemPlacement": "top",
-  "persistOrderOnCreateDelete": true,
+  "newItemPlacement": "bottom",
+  "persistOrderOnCreateDelete": false,
   "debugMode": false
 }

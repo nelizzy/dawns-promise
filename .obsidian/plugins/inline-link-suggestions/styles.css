@@ -1,0 +1,166 @@
+/* Underline for a plain-text mention of an existing note. The --ils-underline-*
+   variables are written onto <body> from the appearance settings (see
+   applyUnderlineStyle() in src/main.ts);
+   the fallbacks here are the defaults, which use theme variables so they adapt
+   to any theme and stay subtler than a real link (a suggestion, not content). */
+.ils-mention {
+	text-decoration: underline;
+	text-decoration-style: var(--ils-underline-style, dotted);
+	text-decoration-color: var(--ils-underline-color, var(--text-faint));
+	text-decoration-thickness: var(--ils-underline-thickness, 1px);
+	/* The line must stay continuous across the whole mention, so skip-ink is
+	   off: at 2-3px (and on wavy) the gaps it cuts around j/p/y descenders read
+	   as a broken underline. The offset grows with the thickness instead, which
+	   keeps the line clear of those descenders. */
+	text-underline-offset: calc(0.12em + var(--ils-underline-thickness, 1px));
+	text-decoration-skip-ink: none;
+}
+
+.ils-mention:hover {
+	text-decoration-color: var(--text-accent);
+}
+
+/* Live sample in the appearance settings. The heading's description has a
+   tight line box, which clips the bottom of a thick wavy underline. */
+.ils-underline-sample {
+	line-height: 2;
+	padding-bottom: 4px;
+	overflow: visible;
+}
+
+/* Hover popup with the link suggestion(s) and an ignore button. The same
+   box is shown as a CM tooltip in the editor (whose container gets the
+   ils-tooltip-host class on mount) and as .ils-popover in reading view. */
+.cm-tooltip.ils-tooltip-host,
+.ils-popover {
+	background: var(--background-primary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-m);
+	box-shadow: var(--shadow-s);
+}
+
+.ils-popover {
+	position: fixed;
+	z-index: var(--layer-tooltip);
+}
+
+.ils-tooltip {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	padding: 2px;
+}
+
+/* Strip Obsidian's default button chrome. */
+.ils-tooltip button {
+	background: none;
+	border: none;
+	box-shadow: none;
+	margin: 0;
+	height: auto;
+	font-family: inherit;
+	font-weight: inherit;
+	color: inherit;
+	cursor: var(--cursor-link);
+	padding: 2px 6px;
+	border-radius: var(--radius-s);
+	font-size: var(--font-ui-small);
+	line-height: var(--line-height-tight);
+}
+
+.ils-tooltip button:hover,
+.ils-tooltip button:focus-visible {
+	background: var(--background-modifier-hover);
+}
+
+/* Must out-rank the reset in `.ils-tooltip button` above. */
+.ils-tooltip button.ils-tooltip-link {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	color: var(--text-normal);
+	font-weight: var(--font-medium);
+}
+
+.ils-tooltip-link:hover .ils-tooltip-link-title {
+	color: var(--text-accent);
+}
+
+.ils-tooltip-link-icon {
+	display: flex;
+	align-items: center;
+	color: var(--text-muted);
+}
+
+.ils-tooltip-link-icon svg {
+	width: var(--icon-xs);
+	height: var(--icon-xs);
+}
+
+.ils-tooltip button.ils-tooltip-ignore {
+	color: var(--text-faint);
+	display: flex;
+	align-items: center;
+}
+
+.ils-tooltip-ignore:hover {
+	color: var(--text-muted);
+}
+
+.ils-tooltip-ignore svg {
+	width: var(--icon-s);
+	height: var(--icon-s);
+}
+
+/* Chip lists in settings (ignored terms, excluded/disabled folders). */
+.ils-chip-setting .setting-item-control {
+	flex-basis: 55%;
+}
+
+.ils-chips {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 6px;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+.ils-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 2px 6px 2px 10px;
+	border-radius: 1em;
+	background: var(--background-modifier-hover);
+	font-size: var(--font-ui-small);
+}
+
+.ils-chip-remove {
+	background: none;
+	border: none;
+	box-shadow: none;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	display: flex;
+	align-items: center;
+	cursor: var(--cursor);
+	color: var(--text-faint);
+	border-radius: 50%;
+}
+
+.ils-chip-remove:hover,
+.ils-chip-remove:focus-visible {
+	color: var(--text-normal);
+}
+
+.ils-chip-remove svg {
+	width: var(--icon-xs);
+	height: var(--icon-xs);
+}
+
+.ils-chip-input {
+	flex: 1 0 8em;
+	max-width: 12em;
+}

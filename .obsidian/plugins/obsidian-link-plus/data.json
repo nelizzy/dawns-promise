@@ -1,0 +1,21 @@
+{
+  "caseSensitive": false,
+  "minMatchLength": 3,
+  "skipHeadings": true,
+  "excludedFolders": "Templates",
+  "excludedNotes": "Country, Job, Elves",
+  "showContext": true,
+  "confirmBatchLink": true,
+  "autoRescanOnChange": true,
+  "openDashboardOnStart": false,
+  "ignoredMentions": [
+    "Ashport Militia.md::Ashport",
+    "Notes/Ashport Dockworkers United.md::Ashport",
+    "Notes/Ashport Militia.md::Ashport",
+    "Notes/Jaques' Voyagers.md::Baron Jaques",
+    "Notes/Nagaji.md::The Golden Fangs",
+    "Notes/Star Elves.md::Elves",
+    "Notes/Wild Elves.md::Elves",
+    "Sessions/2026-10-04.md::Tieflings"
+  ]
+}

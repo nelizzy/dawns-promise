@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e472f78929474f1e",
+            "id": "f12aa6317f8de1f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ashport.md",
+                "file": "Notes/Politics and Organizations of Ashport.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ashport"
-            }
-          },
-          {
-            "id": "0f82b2ed0444534c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sir Roland.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Sir Roland"
+              "title": "Politics and Organizations of Ashport"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -56,7 +41,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false,
+                "autoReveal": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -70,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:job",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,14 +99,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sir Roland.md",
+                "file": "📋 Jobs.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
               "title": "Backlinks"
@@ -133,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sessions/2026-10-04.md",
+                "file": "Notes/Ashport Militia.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -148,7 +133,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
+                "useHierarchy": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -176,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sir Roland.md",
+                "file": "Notes/Ashport Militia.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -186,34 +171,45 @@
             }
           },
           {
+            "id": "edf2b9c5bac4168d",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Notes/Politics and Organizations of Ashport.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties"
+            }
+          },
+          {
             "id": "07f6c7bbbf46e051",
             "type": "leaf",
             "state": {
               "type": "footnotes",
               "state": {
-                "file": "Noel.md"
+                "file": "Notes/Ashport.md"
               },
               "icon": "lucide-file-signature",
               "title": "Footnotes"
             }
           },
           {
-            "id": "3b2c125ba62bf2e2",
+            "id": "4cc18911a18c6ebe",
             "type": "leaf",
             "state": {
-              "type": "advanced-tables-toolbar",
+              "type": "link-plus-dashboard",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "link",
+              "title": "Link Plus"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 391.9000244140625,
-    "collapsed": true
+    "width": 354.2999267578125
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,23 +221,48 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "callout-manager:Insert Callout": false
+      "callout-manager:Insert Callout": false,
+      "obsidian-regex-pipeline:Regex Rulesets": false,
+      "quick-tagger:Add tag to current note": false,
+      "quick-tagger:Remove tag from current note": false,
+      "templater-obsidian:Templater": false,
+      "link-plus:Open Link Plus dashboard": false
     }
   },
-  "active": "0f82b2ed0444534c",
+  "active": "f12aa6317f8de1f4",
   "lastOpenFiles": [
-    "Sir Taymour.md",
-    "House Baramber.md",
-    "Noel.md",
-    "Dawn's Promise.md",
-    "Ashport.md",
+    "Notes/Storgul Longcleaver.md",
+    "Notes/Politics and Organizations of Ashport.md",
+    "Notes/Orcs.md",
+    "Notes/Ashport.md",
+    "Notes/Ashport Dockworkers United.md",
+    "🏠 Home.md",
+    "📋 Jobs.md",
+    "Notes/Caravan Job.md",
+    "Notes/Beast Hunt.md",
+    "Templates/Job.md",
+    "Notes/Noel.md",
+    "Notes/Harath.md",
+    "Notes/Clear Keep Clearwater.md",
+    "Notes/Incendiary Dreams.md",
+    "Notes/Wild Elves.md",
+    "organization.md",
+    "Templates/Import Races.md",
+    "Noel Meta/Wishlist.md",
+    "Noel Meta",
     "Sessions/2026-10-04.md",
-    "Laurel.md",
-    "Varka.md",
-    "Sir Roland.md",
+    "Unresolved Notes.md",
+    "Notes/Torvald Bjornson.md",
+    "Notes/The Hassan Dynasty.md",
+    "Notes/Merchant's Union.md",
+    "Notes/Betan's Legacy.md",
+    "Notes/Ashport Militia.md",
+    "Notes/Varka.md",
+    "Untitled.base",
+    "Notes",
+    "Templates",
     "Sessions",
     "Party",
-    "Welcome.md",
     "desktop.ini"
   ]
 }

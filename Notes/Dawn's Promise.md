@@ -1,3 +1,8 @@
+---
+tags:
+  - organization
+  - tasnan/ashport
+---
 # Dawn's Promise
 
 A mercenary company stationed in [[Ashport]], headed by [[Laurel]], [[Noel]], [[Sir Roland]], [[Sir Taymour]], [[Varka]], sponsored by [[House Baramber]].

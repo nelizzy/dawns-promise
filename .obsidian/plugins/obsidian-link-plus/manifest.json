@@ -1,0 +1,11 @@
+{
+	"id": "link-plus",
+	"name": "Link Plus",
+	"version": "1.0.4",
+	"minAppVersion": "1.7.2",
+	"description": "Build a connected second brain. Find every unlinked mention in your vault and convert them to wikilinks — one click or batch. Grow your knowledge graph automatically, zero setup.",
+	"author": "Jacob Holm",
+	"authorUrl": "https://github.com/jabaho9523",
+	"fundingUrl": "https://www.buymeacoffee.com/jabaho",
+	"isDesktopOnly": false
+}

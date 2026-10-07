@@ -1,0 +1,90 @@
+{
+  "defaultColumnCount": 2,
+  "minColumnWidthPercent": 10,
+  "showDragHandles": true,
+  "enableLivePreview": true,
+  "enableReadingView": true,
+  "foldNotePropertiesByDefault": false,
+  "enableSlashSuggest": true,
+  "inheritStyleOnAdd": true,
+  "styleTargetMode": "all",
+  "styleTargetColumnIndex": 1,
+  "containerBackground": "primary",
+  "showContainerBorder": false,
+  "containerBorderWidthPx": 0,
+  "containerBorderColor": "gray",
+  "containerCornerRadiusPx": 8,
+  "containerTextColor": "text",
+  "verticalDividerWidthPx": 1,
+  "verticalDividerStyle": "solid",
+  "verticalDividerColor": "gray",
+  "enableHeaders": true,
+  "headerTypes": [
+    {
+      "id": "note",
+      "icon": "pencil",
+      "background": "blue-soft",
+      "textColor": "blue",
+      "fontSize": 0.85,
+      "fontWeight": 600
+    },
+    {
+      "id": "info",
+      "icon": "info",
+      "background": "cyan-soft",
+      "textColor": "cyan",
+      "fontSize": 0.85,
+      "fontWeight": 600
+    },
+    {
+      "id": "tip",
+      "icon": "lightbulb",
+      "background": "green-soft",
+      "textColor": "green",
+      "fontSize": 0.85,
+      "fontWeight": 600
+    },
+    {
+      "id": "warning",
+      "icon": "triangle-alert",
+      "background": "orange-soft",
+      "textColor": "orange",
+      "fontSize": 0.85,
+      "fontWeight": 600
+    },
+    {
+      "id": "danger",
+      "icon": "zap",
+      "background": "red-soft",
+      "textColor": "red",
+      "fontSize": 0.85,
+      "fontWeight": 600
+    }
+  ],
+  "stackOnNarrowScreens": true,
+  "narrowBreakpointPx": 460,
+  "enableMoc": true,
+  "mocTemplates": [
+    {
+      "id": "moc-1",
+      "name": "This folder",
+      "inline": false,
+      "folderMode": "note",
+      "folder": "",
+      "includeSubfolders": true,
+      "tags": [],
+      "properties": [],
+      "match": "all",
+      "groupBy": "subfolder",
+      "groupProperty": "",
+      "columns": 3,
+      "assignments": {},
+      "sort": "name",
+      "sortReverse": false,
+      "showHeadings": true,
+      "showBullets": true,
+      "maxPerGroup": 0
+    }
+  ],
+  "mocNotes": []
+}

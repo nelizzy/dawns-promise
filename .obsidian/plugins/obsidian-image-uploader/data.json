@@ -1,0 +1,8 @@
+{
+  "apiEndpoint": "https://api.cloudinary.com/v1_1/sk0qaemk/image/upload",
+  "uploadHeader": "{}",
+  "uploadBody": "{\n  \"file\": \"$FILE\",\n  \"upload_preset\": \"Obsidian\"\n}",
+  "imageUrlPath": "secure_url",
+  "maxWidth": 2048,
+  "enableResize": true
+}

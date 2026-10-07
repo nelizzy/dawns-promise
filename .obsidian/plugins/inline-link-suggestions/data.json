@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "readingView": false,
+  "caseSensitive": false,
+  "minTermLength": 3,
+  "includeAliases": true,
+  "includeFrontmatterTitles": true,
+  "ignoredTerms": [
+    "Elves"
+  ],
+  "excludedFolders": [
+    "Templates"
+  ],
+  "disabledFolders": [],
+  "underlineStyle": "dotted",
+  "underlineThickness": 1,
+  "underlineColor": "faint",
+  "underlineCustomColor": "#888888"
+}

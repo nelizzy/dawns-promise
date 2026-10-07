@@ -3,5 +3,6 @@
   "tabSize": 3,
   "alwaysUpdateLinks": true,
   "showInlineTitle": false,
-  "settingsPopoutWindow": true
+  "settingsPopoutWindow": true,
+  "promptDelete": false
 }

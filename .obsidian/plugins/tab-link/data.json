@@ -1,7 +1,7 @@
 {
   "enabled": true,
   "autoSpace": true,
-  "excludedFolders": "",
+  "excludedFolders": "Templates",
   "minChars": 3,
-  "debounceMs": 150
+  "debounceMs": 100
 }

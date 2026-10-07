@@ -1,0 +1,19 @@
+{
+  "enableResizer": true,
+  "minColumnWidth": 50,
+  "maxColumnWidth": 800,
+  "saveWidths": true,
+  "tableWidths": {
+    "Ekoris.md-idx0-3-Element|High|Low|": {
+      "0": 86,
+      "1": 306
+    },
+    "Notes/Ekoris.md-idx0-3-ElementElement|High|Low|": {
+      "0": 85
+    },
+    "Notes/Ekoris.md-idx0-3-Element|High|Low|": {
+      "0": 108,
+      "1": 307
+    }
+  }
+}

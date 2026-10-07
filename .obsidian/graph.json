@@ -1,22 +1,58 @@
 {
-  "collapse-filter": true,
-  "search": "",
-  "showTags": false,
+  "collapse-filter": false,
+  "search": "-path:Templates  ",
+  "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": true,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "tag:#character  ",
+      "color": {
+        "a": 1,
+        "rgb": 11034977
+      }
+    },
+    {
+      "query": "tag:#location  ",
+      "color": {
+        "a": 1,
+        "rgb": 4293290
+      }
+    },
+    {
+      "query": "tag:#race  ",
+      "color": {
+        "a": 1,
+        "rgb": 9324646
+      }
+    },
+    {
+      "query": "tag:#session  ",
+      "color": {
+        "a": 1,
+        "rgb": 16757575
+      }
+    },
+    {
+      "query": "tag:#organization  ",
+      "color": {
+        "a": 1,
+        "rgb": 9393043
+      }
+    }
+  ],
   "collapse-display": true,
-  "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
+  "showArrow": true,
+  "textFadeMultiplier": -1.2,
+  "nodeSizeMultiplier": 1.15806805708013,
+  "lineSizeMultiplier": 0.715477497255763,
   "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
-  "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 1,
-  "close": true
+  "centerStrength": 0.276148659244159,
+  "repelStrength": 11.1111111111111,
+  "linkStrength": 0.717735612356908,
+  "linkDistance": 437,
+  "scale": 0.5087618855792568,
+  "close": false
 }
