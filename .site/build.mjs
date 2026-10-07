@@ -805,6 +805,11 @@ function accentToHsl(hex) {
 const hsl = accentToHsl(theme.accent);
 const accentVars = hsl ? `body{--accent-h:${hsl.h};--accent-s:${hsl.s}%;--accent-l:${hsl.l}%;}` : '';
 const siteTitle = config.title || 'Notes';
+// optional site icon (config.icon: a URL, or a file path relative to .site/ that is copied to assets/): browser tab + sidebar title
+const iconIsUrl = /^https?:\/\//i.test(config.icon || '');
+const iconFile = config.icon && !iconIsUrl ? path.resolve(HERE, config.icon) : null;
+const siteIcon = !config.icon ? '' : iconIsUrl ? config.icon : `${BASE}/assets/${path.basename(config.icon)}`;
+const iconType = /\.webp$/i.test(config.icon || '') ? ' type="image/webp"' : /\.png$/i.test(config.icon || '') ? ' type="image/png"' : /\.svg$/i.test(config.icon || '') ? ' type="image/svg+xml"' : '';
 const bodyClasses = ['css-settings-manager', ...theme.classes, 'is-mobile-no', 'mod-linux'].join(' ');
 function descriptionOf(n) {
   const t = n.body.replace(/```[\s\S]*?```/g, '').replace(/%%[\s\S]*?%%/g, '').replace(/!?\[\[([^\]|]*\|)?([^\]]*)\]\]/g, '$2').replace(/[#>*_`]/g, '').replace(/\s+/g, ' ').trim();
@@ -825,7 +830,7 @@ function pageHTML(n, bodyHtml, dcScripts, baseSpecs) {
 <meta name="description" content="${esc(descriptionOf(n))}">
 <meta property="og:title" content="${esc(n.name)}">
 <meta property="og:site_name" content="${esc(siteTitle)}">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%85%3C/text%3E%3C/svg%3E">
+${siteIcon ? `<link rel="icon"${iconType} href="${esc(siteIcon)}"><link rel="apple-touch-icon" href="${esc(siteIcon)}">` : `<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%85%3C/text%3E%3C/svg%3E">`}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="${BASE}/assets/site.css">
@@ -837,14 +842,14 @@ function pageHTML(n, bodyHtml, dcScripts, baseSpecs) {
 <div class="workspace is-left-sidedock-open">
 <div class="workspace-split mod-vertical mod-left-split site-sidebar" id="site-sidebar">
 <div class="workspace-tabs mod-top mod-top-left-space"><div class="workspace-leaf mod-active"><div class="workspace-leaf-content" data-type="file-explorer">
-<div class="nav-header"><div class="site-title"><a href="${BASE}/">${esc(siteTitle)}</a><div class="site-title-tools"><a class="clickable-icon" href="${BASE}/graph/" aria-label="Graph view">${icon('git-fork')}</a><a class="clickable-icon" href="${BASE}/tags/" aria-label="Tags">${icon('tags')}</a></div></div>
+<div class="nav-header"><div class="site-title"><a href="${BASE}/">${siteIcon ? `<img class="site-title-icon" src="${esc(siteIcon)}" alt="">` : ''}${esc(siteTitle)}</a><div class="site-title-tools"><a class="clickable-icon" href="${BASE}/graph/" aria-label="Graph view">${icon('git-fork')}</a><a class="clickable-icon" href="${BASE}/tags/" aria-label="Tags">${icon('tags')}</a></div></div>
 <div class="search-input-container"><input id="site-search" type="search" placeholder="Search notes..." enterkeyhint="search" spellcheck="false" autocomplete="off"><div class="search-input-clear-button" aria-label="Clear search"></div></div></div>
 <div class="nav-files-container node-insert-event">${nav}</div>
 </div></div></div></div>
 <div class="workspace-split mod-vertical mod-root">
 <div class="workspace-tabs mod-top mod-active"><div class="workspace-leaf mod-active"><div class="workspace-leaf-content" data-type="markdown" data-mode="preview" data-state-title="${esc(n.name)}">
 <div class="view-header view-header-always-show"><button class="clickable-icon site-menu-button" id="site-menu" aria-label="Toggle navigation">${icon('panel-left')}</button><div class="view-header-title-container mod-at-start"><div class="view-header-title-parent">${crumbs}</div><div class="view-header-title">${esc(n.name)}</div></div></div>
-<div class="view-content"><div class="markdown-reading-view"><div class="markdown-preview-view markdown-rendered is-readable-line-width allow-fold-headings allow-fold-lists show-indentation-guide"><div class="markdown-preview-sizer markdown-preview-section">${propertiesHTML(n.fm)}${bodyHtml}</div></div></div></div>
+<div class="view-content"><div class="markdown-reading-view"><div class="markdown-preview-view markdown-rendered is-readable-line-width allow-fold-headings allow-fold-lists show-indentation-guide"><div class="markdown-preview-sizer markdown-preview-section">${bodyHtml}</div></div></div></div>
 </div></div></div></div>
 </div></div></div>
 <div class="site-scrim" id="site-scrim"></div>
@@ -856,6 +861,7 @@ ${hasDc ? `<script>window.__PAGE=${JSON.stringify({ path: n.path, dc: dcScripts,
 // ---------- build ----------
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
+if (iconFile) { try { fs.copyFileSync(iconFile, path.join(OUT, 'assets', path.basename(iconFile))); } catch { warnings.push(`site icon not found: ${config.icon}`); } }
 
 indexTags();
 const plain = t => t.replace(/!?\[\[([^\]|]*\|)?([^\]]*)\]\]/g, '$2').replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/[*_`~=>#]/g, '').replace(/^\s*[-+]\s+(\[.\]\s+)?/, '').replace(/%%.*?%%/g, '').trim();
@@ -877,7 +883,8 @@ function linksPane(n) {
 
 const page = async n => {
   state.page = n; state.stack = [n.path]; state.dcBlocks = []; state.baseBlocks = [];
-  const body = renderBody(n.body) + linksPane(n);
+  // properties go below the note text, above the backlinks / outgoing links / graph
+  const body = renderBody(n.body) + propertiesHTML(n.fm) + linksPane(n);
   const html = pageHTML(n, body, state.dcBlocks.map(b => ({ id: b.id, lang: b.lang, code: b.code, path: b.path })), state.baseBlocks.slice());
   const dir = path.join(OUT, n.slug);
   fs.mkdirSync(dir, { recursive: true });

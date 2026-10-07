@@ -84,3 +84,10 @@ a.internal-link.is-unresolved, .markdown-rendered a.internal-link.is-unresolved,
   color: color-mix(in oklch, currentColor 75%, var(--text-accent) 25%);
   opacity: 1; cursor: default; text-decoration: none !important;
 }
+
+/* ---- properties sit below the note text (above the links pane) ---- */
+.markdown-preview-sizer > .mod-header.mod-ui { margin-block: var(--size-4-8, 32px) 0; }
+
+/* ---- site icon next to the title in the sidebar ---- */
+.site-title a { display: inline-flex; align-items: center; gap: 8px; }
+.site-title-icon { width: 1.4em; height: 1.4em; object-fit: contain; flex: none; }

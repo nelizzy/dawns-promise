@@ -10,5 +10,6 @@
   "timezone": "Europe/Copenhagen",
   "library": [
     "Components"
-  ]
+  ],
+  "icon": "src/dawns_promise_icon.webp"
 }
