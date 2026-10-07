@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Politics and Organizations of Ashport.md",
+                "file": "Notes/Kitsune.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Politics and Organizations of Ashport"
+              "title": "Kitsune"
             }
           }
         ]
@@ -176,7 +176,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Notes/Politics and Organizations of Ashport.md"
+                "file": "Notes/Kitsune.md"
               },
               "icon": "lucide-info",
               "title": "File properties"
@@ -226,13 +226,14 @@
       "quick-tagger:Add tag to current note": false,
       "quick-tagger:Remove tag from current note": false,
       "templater-obsidian:Templater": false,
-      "link-plus:Open Link Plus dashboard": false
+      "link-plus:Open Link Plus dashboard": false,
+      "github-sync:Sync with Remote": false
     }
   },
   "active": "f12aa6317f8de1f4",
   "lastOpenFiles": [
-    "Notes/Storgul Longcleaver.md",
     "Notes/Politics and Organizations of Ashport.md",
+    "Notes/Storgul Longcleaver.md",
     "Notes/Orcs.md",
     "Notes/Ashport.md",
     "Notes/Ashport Dockworkers United.md",
