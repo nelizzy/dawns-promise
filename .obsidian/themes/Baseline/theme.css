@@ -250,7 +250,7 @@ body.reduce-motion.is-mobile .modal-bg {
     --modal-background: var(--background-secondary) !important;
   }
   body:not(.is-mobile):not(.is-popout-window) .mod-root::before {
-    content: "Baseline requires a newer Obsidian installer. Download and run the latest installer from obsidian.md to remove this message.";
+    /* content: "Baseline requires a newer Obsidian installer. Download and run the latest installer from obsidian.md to remove this message."; */
     display: flex;
     position: absolute;
     justify-content: center;
