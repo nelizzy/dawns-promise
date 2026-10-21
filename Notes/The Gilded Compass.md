@@ -5,6 +5,7 @@ aliases:
   - Gilded Compass
   - Temple of Abadar
   - The Gilded Compass
+  - Abadar
 ---
 # The Gilded Compass
 

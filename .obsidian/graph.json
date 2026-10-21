@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "-path:Templates  ",
+  "search": "-path:Templates -path:Components -path:\"Noel Meta\"  ",
   "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -53,6 +53,6 @@
   "repelStrength": 11.1111111111111,
   "linkStrength": 0.717735612356908,
   "linkDistance": 437,
-  "scale": 0.76572575451667,
+  "scale": 0.14137078679428078,
   "close": false
 }

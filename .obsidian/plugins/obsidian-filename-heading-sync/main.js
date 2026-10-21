@@ -82,6 +82,14 @@ function generateHeadingFromFilename(filename, settings) {
     }
     return text.trim();
 }
+/**
+ * Whether the heading already corresponds to the filename. Headings may keep
+ * characters that are stripped when generating filenames.
+ */
+function headingMatchesFilename(heading, filename, settings) {
+    return (generateFilenameFromHeading(heading, settings) ===
+        generateFilenameFromHeading(filename, settings));
+}
 
 // Must be Strings unless settings dialog is updated.
 var HeadingStyle;
@@ -384,7 +392,7 @@ class FilenameHeadingSyncPlugin extends obsidian.Plugin {
                 const start = this.findNoteStart(lines);
                 const heading = this.findHeading(lines, start);
                 if (heading !== null) {
-                    if (heading.text !== newHeading) {
+                    if (!headingMatchesFilename(heading.text, file.basename, this.settings)) {
                         this.replaceHeading(file, lines, heading.lineNumber, heading.style, newHeading);
                     }
                 }

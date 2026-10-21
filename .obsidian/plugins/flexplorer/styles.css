@@ -2,10 +2,6 @@ body.fp-dragging {
   & [data-type="file-explorer"] .nav-files-container {
     overflow: hidden !important;
 
-    & .nav-folder-children {
-      padding-bottom: 5px;
-    }
-
     & .tree-item[data-drop-sibling] {
       position: relative;
 

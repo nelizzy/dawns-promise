@@ -2,6 +2,8 @@
 tags:
   - character/important
   - character/pc
+aliases:
+  - Roland
 ---
 # Sir Roland
 - A Founder of [[Dawn's Promise]]

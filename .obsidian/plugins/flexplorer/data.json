@@ -18,9 +18,15 @@
     "Sessions": {
       "isPinned": false,
       "isHidden": false,
-      "sortOrder": "custom",
+      "sortOrder": "byNameAsc",
       "customOrder": [
-        "2026-10-04.md"
+        "2026-10-25.md",
+        "2026-09-27.md",
+        "2026-09-06.md",
+        "2026-10-04.md",
+        "2026-08-16.md",
+        "2026-08-30.md",
+        "2026-08-09.md"
       ]
     },
     "Templates": {
@@ -28,9 +34,10 @@
       "isHidden": false,
       "sortOrder": "custom",
       "customOrder": [
-        "Create Template.md",
-        "Country.md",
-        "Job.md"
+        "1 Session.md",
+        "2 Job.md",
+        "3 Template.md",
+        "Country.md"
       ],
       "ctime": 1791309944126,
       "mtime": 1791309944126
@@ -40,6 +47,8 @@
       "isHidden": false,
       "sortOrder": "byNameAsc",
       "customOrder": [
+        "Brindinford.md",
+        "Necromantic Wellspring.md",
         "Darfellan Raiders.md",
         "Ore Shortage.md",
         "A Faire's Ill Portents.md",
@@ -172,13 +181,13 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791133320426,
-      "mtime": 1791309708031
+      "mtime": 1792577691020
     },
     "Notes/Sir Taymour.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791133326071,
-      "mtime": 1791309708041
+      "mtime": 1792577679523
     },
     "Notes/Stone Custodians.md": {
       "isPinned": false,
@@ -310,7 +319,7 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791314188000,
-      "mtime": 1791318682814
+      "mtime": 1792577447152
     },
     "Notes/Baron Jaques.md": {
       "isPinned": false,
@@ -352,7 +361,7 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791292301063,
-      "mtime": 1791317746872
+      "mtime": 1792577895926
     },
     "Notes/Leviathan.md": {
       "isPinned": false,
@@ -384,23 +393,11 @@
       "ctime": 1791319913813,
       "mtime": 1791319923914
     },
-    "Templates/Job.md": {
-      "isPinned": false,
-      "isHidden": false,
-      "ctime": 1791321021786,
-      "mtime": 1791383220645
-    },
     "Notes/Keep Clearwater.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791320049865,
       "mtime": 1791383797393
-    },
-    "Templates/Create Template.md": {
-      "isPinned": false,
-      "isHidden": false,
-      "ctime": 1791321155273,
-      "mtime": 1791321312479
     },
     "Notes/Humans.md": {
       "isPinned": false,
@@ -597,7 +594,7 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791382484671,
-      "mtime": 1791383728317
+      "mtime": 1792578620303
     },
     "Components/Scripts": {
       "isPinned": false,
@@ -619,7 +616,7 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791382895919,
-      "mtime": 1791382958031
+      "mtime": 1792579591550
     },
     "Notes/Ore Shortage.md": {
       "isPinned": false,
@@ -638,6 +635,72 @@
       "isHidden": false,
       "ctime": 1791133289848,
       "mtime": 1791383823854
+    },
+    "Sessions/2026-08-09.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1792577650763,
+      "mtime": 1792577794531
+    },
+    "Sessions/2026-08-16.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1792577840908,
+      "mtime": 1792577901737
+    },
+    "Sessions/2026-08-30.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1792577957020,
+      "mtime": 1792578430821
+    },
+    "Sessions/2026-09-06.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1792578062475,
+      "mtime": 1792578165537
+    },
+    "Sessions/2026-09-27.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1792578199812,
+      "mtime": 1792578442338
+    },
+    "Notes/Necromantic Wellspring.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1792578445249,
+      "mtime": 1792578445375
+    },
+    "Templates/2 Job.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791321021786,
+      "mtime": 1791383220645
+    },
+    "Templates/1 Session.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1792578757688,
+      "mtime": 1792579276107
+    },
+    "Templates/3 Template.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791321155273,
+      "mtime": 1791321312479
+    },
+    "Sessions/2026-10-25.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1792579099149,
+      "mtime": 1792579611000
+    },
+    "Notes/Brindinford.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1792579465274,
+      "mtime": 1792579550292
     }
   },
   "showHidden": true,
