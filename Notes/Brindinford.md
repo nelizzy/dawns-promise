@@ -8,3 +8,7 @@ Since then, it's rebuilt up as a moderately large town with a reputation for att
 The Baron has a reputation for successfully employing bread and circus techniques to maintain power, using the considerable wealth of his fallen noble brethren to buy the loyalty of Brindinford. 
 
 Some of these funds have gone to attracting travelling events, including the inbound faire mentioned in [[A Faire's Ill Portents]].
+
+# Learned Fact
+- About 5000 people (though built for closer to 10000ish).
+- 
