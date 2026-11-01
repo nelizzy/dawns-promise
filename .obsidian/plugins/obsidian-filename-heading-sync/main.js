@@ -45,7 +45,17 @@ function isKanban(app, f) {
     const fileCache = app.metadataCache.getFileCache(f);
     return !!(fileCache === null || fileCache === void 0 ? void 0 : fileCache.frontmatter) && !!fileCache.frontmatter['kanban-plugin'];
 }
+/**
+ * Files opened with "Open file from outside the vault" are TFiles without a
+ * parent folder. Renaming one would move it into the vault root.
+ */
+function isOutsideVault(f) {
+    return f.parent === null;
+}
 function isExcluded(app, f) {
+    if (isOutsideVault(f)) {
+        return true;
+    }
     if (isExcalidraw(app, f)) {
         return true;
     }
@@ -59,7 +69,49 @@ const stockIllegalSymbols = /[\\/:|#^[\]]/g;
 function regExpEscape(str) {
     return String(str).replace(/[\\^$*+?.()|[\]{}]/g, '\\$&');
 }
+const ellipsis = '…';
+const extensionBytes = '.md'.length;
+const encoder = new TextEncoder();
+function byteLength(text) {
+    return encoder.encode(text).length;
+}
+/** The truncation marker, or none when the user made "…" illegal. */
+function truncationMarker(settings) {
+    return settings.userIllegalSymbols.includes(ellipsis) ? '' : ellipsis;
+}
+/**
+ * Shorten the filename so that it plus ".md" fits into maxBytes. The cut is
+ * made at a word boundary where possible, never inside a character, and is
+ * marked with the marker.
+ */
+function truncateFilename(text, maxBytes, separator, marker = ellipsis) {
+    if (!maxBytes || byteLength(text) + extensionBytes <= maxBytes) {
+        return text;
+    }
+    const budget = maxBytes - extensionBytes - byteLength(marker);
+    let cut = '';
+    let used = 0;
+    // Iterating a string yields whole code points, so no character is split.
+    for (const char of text) {
+        used += byteLength(char);
+        if (used > budget) {
+            break;
+        }
+        cut += char;
+    }
+    // Prefer to end at a word boundary, unless that would drop the whole name.
+    // Search the full text, so that a separator cut in half also counts.
+    const boundary = text.lastIndexOf(separator, cut.length);
+    if (boundary > 0) {
+        cut = text.slice(0, boundary);
+    }
+    while (separator && cut.endsWith(separator)) {
+        cut = cut.slice(0, -separator.length);
+    }
+    return cut.trimEnd() + marker;
+}
 function generateFilenameFromHeading(heading, settings) {
+    var _a;
     // Strip stock illegal symbols
     let text = heading.replace(stockIllegalSymbols, '');
     // Strip user-defined illegal symbols
@@ -72,7 +124,7 @@ function generateFilenameFromHeading(heading, settings) {
     if (settings.spaceReplacementCharacter) {
         text = text.replace(/ /g, settings.spaceReplacementCharacter);
     }
-    return text.trim();
+    return truncateFilename(text.trim(), (_a = settings.maxFilenameBytes) !== null && _a !== void 0 ? _a : 0, settings.spaceReplacementCharacter || ' ', truncationMarker(settings));
 }
 function generateHeadingFromFilename(filename, settings) {
     let text = filename;
@@ -84,11 +136,23 @@ function generateHeadingFromFilename(filename, settings) {
 }
 /**
  * Whether the heading already corresponds to the filename. Headings may keep
- * characters that are stripped when generating filenames.
+ * characters that are stripped when generating filenames. A filename that was
+ * shortened under an earlier length limit also matches, so that changing the
+ * limit never replaces a full heading with an old shortened filename.
  */
 function headingMatchesFilename(heading, filename, settings) {
-    return (generateFilenameFromHeading(heading, settings) ===
-        generateFilenameFromHeading(filename, settings));
+    if (generateFilenameFromHeading(heading, settings) ===
+        generateFilenameFromHeading(filename, settings)) {
+        return true;
+    }
+    const marker = truncationMarker(settings);
+    if (!marker || !filename.endsWith(marker)) {
+        return false;
+    }
+    const unlimited = Object.assign(Object.assign({}, settings), { maxFilenameBytes: 0 });
+    const full = generateFilenameFromHeading(heading, unlimited);
+    const stem = generateFilenameFromHeading(filename.slice(0, -marker.length), unlimited);
+    return stem !== '' && full.length > stem.length && full.startsWith(stem);
 }
 
 // Must be Strings unless settings dialog is updated.
@@ -109,7 +173,13 @@ const DEFAULT_SETTINGS = {
     renameDebounceTimeout: 1000,
     insertHeadingIfMissing: true,
     spaceReplacementCharacter: '',
+    limitFilenameLength: false,
 };
+/**
+ * Android and most Linux file systems allow 255 bytes per filename. The rest
+ * leaves room for sync-conflict copies, e.g. Syncthing adds 38 bytes.
+ */
+const maxFilenameBytes = 200;
 class FilenameHeadingSyncPlugin extends obsidian.Plugin {
     constructor() {
         super(...arguments);
@@ -296,7 +366,7 @@ class FilenameHeadingSyncPlugin extends obsidian.Plugin {
     forceSyncHeadingToFilename(file) {
         return __awaiter(this, void 0, void 0, function* () {
             var _a;
-            if (file === null) {
+            if (file === null || isOutsideVault(file)) {
                 return;
             }
             // Manual commands and debounce callbacks share a queue for this file only.
@@ -382,7 +452,7 @@ class FilenameHeadingSyncPlugin extends obsidian.Plugin {
     }
     forceSyncFilenameToHeading(file) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (file === null) {
+            if (file === null || isOutsideVault(file)) {
                 return;
             }
             yield this.ensureFileSaved(file);
@@ -392,7 +462,7 @@ class FilenameHeadingSyncPlugin extends obsidian.Plugin {
                 const start = this.findNoteStart(lines);
                 const heading = this.findHeading(lines, start);
                 if (heading !== null) {
-                    if (!headingMatchesFilename(heading.text, file.basename, this.settings)) {
+                    if (!headingMatchesFilename(heading.text, file.basename, this.headingSettings())) {
                         this.replaceHeading(file, lines, heading.lineNumber, heading.style, newHeading);
                     }
                 }
@@ -476,7 +546,12 @@ class FilenameHeadingSyncPlugin extends obsidian.Plugin {
         return null; // no valid heading found outside code blocks
     }
     sanitizeHeading(text) {
-        return generateFilenameFromHeading(text, this.settings);
+        return generateFilenameFromHeading(text, this.headingSettings());
+    }
+    headingSettings() {
+        return Object.assign(Object.assign({}, this.settings), { maxFilenameBytes: this.settings.limitFilenameLength
+                ? maxFilenameBytes
+                : 0 });
     }
     /**
      * Insert the `heading` at `lineNumber` in `file`.
@@ -773,6 +848,15 @@ class FilenameHeadingSyncSettingTab extends obsidian.PluginSettingTab {
                 this.plugin.settings.renameDebounceTimeout = numValue;
                 yield this.plugin.saveSettings();
             }
+        })));
+        new obsidian.Setting(containerEl)
+            .setName('Limit Filename Length')
+            .setDesc('Keep filenames short enough for Android/Linux (255 bytes), with room for sync-conflict copies. Filenames are limited to 200 bytes; longer headings give a shortened filename, cut at a word boundary and marked with "…". The heading stays complete.')
+            .addToggle((toggle) => toggle
+            .setValue(this.plugin.settings.limitFilenameLength)
+            .onChange((value) => __awaiter(this, void 0, void 0, function* () {
+            this.plugin.settings.limitFilenameLength = value;
+            yield this.plugin.saveSettings();
         })));
         containerEl.createEl('h2', { text: 'Ignored Files By Regex' });
         containerEl.createEl('p', {

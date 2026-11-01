@@ -20,6 +20,7 @@
       "isHidden": false,
       "sortOrder": "byNameAsc",
       "customOrder": [
+        "2026-11-01.md",
         "2026-10-25.md",
         "2026-09-27.md",
         "2026-09-06.md",
@@ -701,11 +702,18 @@
       "isHidden": false,
       "ctime": 1792579465274,
       "mtime": 1792579550292
+    },
+    "Sessions/2026-11-01.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793553167316,
+      "mtime": 1793553167316
     }
   },
   "showHidden": true,
   "hidePatterns": [],
   "newItemPlacement": "bottom",
+  "copyPlacement": "above",
   "persistOrderOnCreateDelete": false,
   "debugMode": false
 }
