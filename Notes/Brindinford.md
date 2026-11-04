@@ -11,4 +11,15 @@ Some of these funds have gone to attracting travelling events, including the inb
 
 # Learned Fact
 - About 5000 people (though built for closer to 10000ish).
-- 
+- About 1 week of travel away from Ashport
+- Made up of following districts:
+	- [[Southspur]] - slums and main trade docks
+	- [[Silverhill]] - rich quarter, where the keep is
+	- [[Fordnorth]] - holy quarter
+	- [[Westhill]] - merchants and scholars plus magic shops, as well as 'parking' dock
+	- [[Chatterstreet Market]] - wide trade street for common- and tradefolk
+- Travelling events like faires are paid for with taxes
+	- Taxes are lowered leading up to and during big events to encourage festival participation
+- Incoming visitors are inspected and peace-bound (weapons wrapped, two casting fingers bound)
+- Pays their [[Speakers]] a fixed amount straight from the coffers
+- Has a small temple (?) of [[Sarenrae]]

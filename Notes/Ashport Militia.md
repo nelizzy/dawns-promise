@@ -14,3 +14,12 @@ The militia has three main divisions within. The first is a group of lightly arm
 The second, a guard regiment who posts at key positions throughout the city. These guards are more heavily armored, and proficient with crossbow and halberd. 
 
 Finally, they have response teams, more varied in equipment, able to be summoned to deal with major threats.
+
+## Player Notes
+- One of the city's biggest buyers - merchants want to win the bids for militia contracts [^1]
+	- e.g. Weekly contract for bedding and supplies
+- Stretched thin enough to struggle responding to threats within Ashport, so threats that do not reach Ashport directly are left unhandled [^2]
+
+[^1]: [[S5 2026-09-27|2026-09-27]]
+
+[^2]: [[S6 2026-10-04|2026-10-04]]

@@ -3,6 +3,7 @@ tags:
   - character/important
   - character/npc
   - tasnan/ashport
+  - organization/appeasers
 ---
 # Crimson Serenity
 

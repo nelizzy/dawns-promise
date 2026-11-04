@@ -16,3 +16,6 @@ The largest temple in the city, the Gilded Compass tends to many civic duties wi
 The Gilded Compass handles most mundane administration within [[Ashport]], and levies a tax on businesses within the city. To aid in efficiency, they have a dozen smaller offices throughout [[Ashport]] that are able to handle simpler administrative services at more accessible locations. 
 
 While the Abadarian faith is not held by the majority of the citizenry of [[Ashport]], it is by far the one with the most influence on day to day life due to their heavy integration with civil services.
+
+## Player Notes
+- They keep official property and ownership records in Ashport

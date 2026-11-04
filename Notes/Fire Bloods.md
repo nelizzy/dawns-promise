@@ -17,3 +17,7 @@ While strongly disliked by the people of [[Ashport]], they have proven themselve
 That said, they still are in a very tenuous position within the city, considered to be one more incident from being banished or worse. 
 
 They are infamous for highly aggressive fire magic and explosive alchemy.
+
+## Player Notes
+- They are more than happy to be hired for outright arsony
+- Members [[Brilrod Grizzjaw]], [[Nistarbul]], and [[Grem]] were handed off to the militia and 'handled'

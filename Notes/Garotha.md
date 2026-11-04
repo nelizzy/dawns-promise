@@ -36,3 +36,8 @@ Often referred to as The Eternal Aristocracy, Garotha is a land ruled by the dea
 For thousands of years, aristocratic wights have ruled the peasantry in an unchanging land. For the nobility, there is no birth, no death, with no desire for any change at all, content to simply rule over the land as the living serfs raise families, grow old, and die in an unending cycle. 
 
 The living in Garotha are treated fairly, and are fanatically loyal when Garotha does go to an incredibly rare war. Garothan men, marching shoulder to shoulder with animated flesh and bone, each living warrior knows that to die with truly heroic glory will result in eternal life, risen as a wight to join the Aristocracy.
+
+## Player Notes
+- Garothans believe that going to the [[Boneyard]] wastes potential and abandons your people. Combing back to the Material Plane (as [[undead]]) is an honour.
+- Garothan [[Nercomancy]] keeps the soul and raises at least semi-intelligent undead. Their methods are not evil.
+- A barony’s [[Matron Mother]] may raise a faithful serf into the [[Eternal Guard]]. The serf’s family throws a party to celebrate their second life.

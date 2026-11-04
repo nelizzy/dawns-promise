@@ -1,5 +1,8 @@
 ---
 tags:
-  - tasnan/ashport
+  - tasnan
 ---
 # House Baramber
+- Sponsor of [[Dawn's Promise]]
+- Represented by a Badger
+- 

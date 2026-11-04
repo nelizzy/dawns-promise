@@ -112,6 +112,21 @@
         "Alt"
       ],
       "key": "N"
+    },
+    {
+      "modifiers": [
+        "Alt",
+        "Ctrl"
+      ],
+      "key": "N"
+    }
+  ],
+  "editor:insert-footnote": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "'"
     }
   ]
 }

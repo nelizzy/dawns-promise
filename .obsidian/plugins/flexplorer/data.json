@@ -5,6 +5,7 @@
       "isHidden": false,
       "sortOrder": "byNameAsc",
       "customOrder": [
+        "✨ House Rules and Lore.md",
         "Noel Meta",
         "Templates",
         "Components",
@@ -12,7 +13,8 @@
         "Sessions",
         "🏠 Home.md",
         "📋 Jobs.md",
-        "🌎 Ekoris.md"
+        "🌎 Ekoris.md",
+        "Untitled.md"
       ]
     },
     "Sessions": {
@@ -20,14 +22,15 @@
       "isHidden": false,
       "sortOrder": "byNameAsc",
       "customOrder": [
-        "2026-11-01.md",
-        "2026-10-25.md",
-        "2026-09-27.md",
-        "2026-09-06.md",
-        "2026-10-04.md",
-        "2026-08-16.md",
-        "2026-08-30.md",
-        "2026-08-09.md"
+        "S0 2026-07-26.md",
+        "S1 2026-08-09.md",
+        "S2 2026-08-16.md",
+        "S3 2026-08-30.md",
+        "S4 2026-09-06.md",
+        "S5 2026-09-27.md",
+        "S6 2026-10-04.md",
+        "S7 2026-10-25.md",
+        "S8 2026-11-01.md"
       ]
     },
     "Templates": {
@@ -38,6 +41,7 @@
         "1 Session.md",
         "2 Job.md",
         "3 Template.md",
+        "4 Note.md",
         "Country.md"
       ],
       "ctime": 1791309944126,
@@ -48,8 +52,9 @@
       "isHidden": false,
       "sortOrder": "byNameAsc",
       "customOrder": [
+        "Southern Wode Tribe.md",
         "Brindinford.md",
-        "Necromantic Wellspring.md",
+        "Necrotic Wellspring.md",
         "Darfellan Raiders.md",
         "Ore Shortage.md",
         "A Faire's Ill Portents.md",
@@ -119,7 +124,23 @@
         "Orcs.md",
         "Catfolk.md",
         "Gnolls.md",
-        "Kitsune.md"
+        "Kitsune.md",
+        "Dragon Cult.md",
+        "Kobolds.md",
+        "Hadrick Voss.md",
+        "Depth Speech.md",
+        "Lycanthropy.md",
+        "Magic System and Scrolls.md",
+        "Resurrection.md",
+        "Nercomancy.md",
+        "Nineteen Claws Ebb Slumber.md",
+        "Owlbears.md",
+        "Tarruk.md",
+        "Sea Lord Vashorey.md",
+        "The Speakers.md",
+        "Wellsprings.md",
+        "Pinecrest.md",
+        "Spirits.md"
       ],
       "ctime": 1791309960581,
       "mtime": 1791309960581
@@ -140,7 +161,7 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791137604831,
-      "mtime": 1791318769965
+      "mtime": 1793801703810
     },
     "Notes/Duke Serrifal of House Vallier.md": {
       "isPinned": false,
@@ -152,13 +173,13 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791292489447,
-      "mtime": 1791318834140
+      "mtime": 1793799884613
     },
     "Notes/Jaques' Voyagers.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791292492842,
-      "mtime": 1791383713767
+      "mtime": 1793802732716
     },
     "Notes/Laurel.md": {
       "isPinned": false,
@@ -182,7 +203,7 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791133320426,
-      "mtime": 1792577691020
+      "mtime": 1793797512997
     },
     "Notes/Sir Taymour.md": {
       "isPinned": false,
@@ -194,7 +215,7 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791292439120,
-      "mtime": 1791323388724
+      "mtime": 1793803263429
     },
     "Notes/Storgul Longcleaver.md": {
       "isPinned": false,
@@ -224,7 +245,7 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791290501607,
-      "mtime": 1791314612011
+      "mtime": 1793803655465
     },
     "Notes/The Red Writ.md": {
       "isPinned": false,
@@ -266,7 +287,7 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791311864016,
-      "mtime": 1791321643782
+      "mtime": 1793799945452
     },
     "Notes/The Breezes.md": {
       "isPinned": false,
@@ -278,25 +299,25 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791311892896,
-      "mtime": 1791314423214
+      "mtime": 1793802770066
     },
     "Notes/Tasnan.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791311908307,
-      "mtime": 1791323100494
+      "mtime": 1793803405935
     },
     "Notes/The Bodin Union.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791311926899,
-      "mtime": 1791321719670
+      "mtime": 1793799945541
     },
     "Notes/The Hassan Dynasty.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791311937611,
-      "mtime": 1791321690011
+      "mtime": 1793799945586
     },
     "Notes/Illithia.md": {
       "isPinned": false,
@@ -308,19 +329,19 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791311960928,
-      "mtime": 1791321719686
+      "mtime": 1793799945427
     },
     "Notes/Harath.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791311968371,
-      "mtime": 1791314941122
+      "mtime": 1793799945389
     },
     "Notes/Ashport.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791314188000,
-      "mtime": 1792577447152
+      "mtime": 1793801646501
     },
     "Notes/Baron Jaques.md": {
       "isPinned": false,
@@ -332,13 +353,13 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791314661463,
-      "mtime": 1791318702182
+      "mtime": 1793799690876
     },
     "Notes/Merchant's Union.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791315932558,
-      "mtime": 1791318896157
+      "mtime": 1793803004628
     },
     "Notes/House Vallier.md": {
       "isPinned": false,
@@ -350,31 +371,31 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791316712064,
-      "mtime": 1791319736655
+      "mtime": 1793799945300
     },
     "Notes/Crimson Serenity.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791291386372,
-      "mtime": 1791318769952
+      "mtime": 1793803730390
     },
     "Notes/The Gilded Compass.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791292301063,
-      "mtime": 1792577895926
+      "mtime": 1793803497401
     },
     "Notes/Leviathan.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791317489094,
-      "mtime": 1791317583856
+      "mtime": 1793800432828
     },
     "Notes/Slumbering Collective.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791317365650,
-      "mtime": 1791317633585
+      "mtime": 1793803737163
     },
     "Notes/Leviathan Spawn.md": {
       "isPinned": false,
@@ -392,19 +413,19 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791319913813,
-      "mtime": 1791319923914
+      "mtime": 1793801725810
     },
     "Notes/Keep Clearwater.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791320049865,
-      "mtime": 1791383797393
+      "mtime": 1793800257289
     },
     "Notes/Humans.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791321541838,
-      "mtime": 1791378803458
+      "mtime": 1793799945422
     },
     "Notes/Dwarves.md": {
       "isPinned": false,
@@ -440,13 +461,13 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791321541892,
-      "mtime": 1791378791788
+      "mtime": 1793799945233
     },
     "Notes/Tieflings.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791321541900,
-      "mtime": 1791378814558
+      "mtime": 1793801605925
     },
     "Notes/Nagaji.md": {
       "isPinned": false,
@@ -464,13 +485,13 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791321541925,
-      "mtime": 1791378794564
+      "mtime": 1793799945259
     },
     "Notes/Gnolls.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791321541935,
-      "mtime": 1791378801115
+      "mtime": 1793799945335
     },
     "Notes/Kitsune.md": {
       "isPinned": false,
@@ -522,7 +543,7 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791324077079,
-      "mtime": 1791324176673
+      "mtime": 1793802836454
     },
     "📋 Jobs.md": {
       "isPinned": false,
@@ -567,12 +588,6 @@
       "ctime": 1791372672821,
       "mtime": 1791372672821
     },
-    "🌎 Ekoris.md": {
-      "isPinned": false,
-      "isHidden": false,
-      "ctime": 1791292639226,
-      "mtime": 1791380927781
-    },
     "Components/Card.md": {
       "isPinned": false,
       "isHidden": false,
@@ -595,7 +610,7 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791382484671,
-      "mtime": 1792578620303
+      "mtime": 1793804313823
     },
     "Components/Scripts": {
       "isPinned": false,
@@ -631,48 +646,6 @@
       "ctime": 1791383306364,
       "mtime": 1791383306364
     },
-    "Sessions/2026-10-04.md": {
-      "isPinned": false,
-      "isHidden": false,
-      "ctime": 1791133289848,
-      "mtime": 1791383823854
-    },
-    "Sessions/2026-08-09.md": {
-      "isPinned": false,
-      "isHidden": false,
-      "ctime": 1792577650763,
-      "mtime": 1792577794531
-    },
-    "Sessions/2026-08-16.md": {
-      "isPinned": false,
-      "isHidden": false,
-      "ctime": 1792577840908,
-      "mtime": 1792577901737
-    },
-    "Sessions/2026-08-30.md": {
-      "isPinned": false,
-      "isHidden": false,
-      "ctime": 1792577957020,
-      "mtime": 1792578430821
-    },
-    "Sessions/2026-09-06.md": {
-      "isPinned": false,
-      "isHidden": false,
-      "ctime": 1792578062475,
-      "mtime": 1792578165537
-    },
-    "Sessions/2026-09-27.md": {
-      "isPinned": false,
-      "isHidden": false,
-      "ctime": 1792578199812,
-      "mtime": 1792578442338
-    },
-    "Notes/Necromantic Wellspring.md": {
-      "isPinned": false,
-      "isHidden": false,
-      "ctime": 1792578445249,
-      "mtime": 1792578445375
-    },
     "Templates/2 Job.md": {
       "isPinned": false,
       "isHidden": false,
@@ -689,25 +662,199 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791321155273,
-      "mtime": 1791321312479
-    },
-    "Sessions/2026-10-25.md": {
-      "isPinned": false,
-      "isHidden": false,
-      "ctime": 1792579099149,
-      "mtime": 1792579611000
+      "mtime": 1793800044054
     },
     "Notes/Brindinford.md": {
       "isPinned": false,
       "isHidden": false,
       "ctime": 1792579465274,
-      "mtime": 1792579550292
+      "mtime": 1793799498735
     },
-    "Sessions/2026-11-01.md": {
+    "Sessions/S1 2026-08-09.md": {
       "isPinned": false,
       "isHidden": false,
-      "ctime": 1793553167316,
-      "mtime": 1793553167316
+      "ctime": 1793794958433,
+      "mtime": 1793795864435
+    },
+    "Sessions/S2 2026-08-16.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793794958433,
+      "mtime": 1793795868190
+    },
+    "Sessions/S3 2026-08-30.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793791833139,
+      "mtime": 1793804283427
+    },
+    "Sessions/S5 2026-09-27.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793794958434,
+      "mtime": 1793804221162
+    },
+    "Sessions/S4 2026-09-06.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793794958434,
+      "mtime": 1793795869038
+    },
+    "Sessions/S6 2026-10-04.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793794958435,
+      "mtime": 1793795869884
+    },
+    "Sessions/S7 2026-10-25.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793794958435,
+      "mtime": 1793795870801
+    },
+    "Sessions/S8 2026-11-01.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793794958436,
+      "mtime": 1793795870754
+    },
+    "Notes/Southern Wode Tribe.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793797160462,
+      "mtime": 1793797627596
+    },
+    "Notes/Dragon Cult.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793799514068,
+      "mtime": 1793799690877
+    },
+    "Notes/Kobolds.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793799571047,
+      "mtime": 1793800966647
+    },
+    "🌎 Ekoris.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1791292639226,
+      "mtime": 1793801407226
+    },
+    "Untitled.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793799946222,
+      "mtime": 1793799946552
+    },
+    "Templates/4 Note.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793799957654,
+      "mtime": 1793800114456
+    },
+    "Notes/Hadrick Voss.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793800146834,
+      "mtime": 1793800193545
+    },
+    "Notes/Depth Speech.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793800275654,
+      "mtime": 1793800401914
+    },
+    "Notes/Lycanthropy.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793800446795,
+      "mtime": 1793800688936
+    },
+    "Notes/Magic System and Scrolls.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793800696745,
+      "mtime": 1793804092557
+    },
+    "Sessions/S0 2026-07-26.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793801055731,
+      "mtime": 1793801354042
+    },
+    "Notes/Resurrection.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793801377439,
+      "mtime": 1793801456248
+    },
+    "Notes/Nercomancy.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793801460705,
+      "mtime": 1793802736520
+    },
+    "Notes/Nineteen Claws Ebb Slumber.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793803012292,
+      "mtime": 1793804193802
+    },
+    "Notes/Owlbears.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793803140737,
+      "mtime": 1793803215028
+    },
+    "Notes/Tarruk.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793803266174,
+      "mtime": 1793803338945
+    },
+    "Notes/Sea Lord Vashorey.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793803426128,
+      "mtime": 1793803484352
+    },
+    "Notes/The Speakers.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793803678073,
+      "mtime": 1793803974882
+    },
+    "Notes/Wellsprings.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793804006711,
+      "mtime": 1793804316838
+    },
+    "Notes/Necrotic Wellspring.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1792578445249,
+      "mtime": 1793804265726
+    },
+    "Notes/Pinecrest.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793804334776,
+      "mtime": 1793804503093
+    },
+    "Notes/Spirits.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793804594306,
+      "mtime": 1793805186741
+    },
+    "✨ House Rules and Lore.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1793801750291,
+      "mtime": 1793805284812
     }
   },
   "showHidden": true,

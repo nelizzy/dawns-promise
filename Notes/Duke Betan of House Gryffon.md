@@ -15,3 +15,10 @@ When he passed from a sudden illness, many of his reforms were repealed as soon 
 This outrage sparked the flames of revolution, and the following several years of conflict saw some of the most reprehensible atrocities [[🌎 Ekoris]] has known, before eventually seeing the execution of the king, the royal family, and most of the noble caste.
 
 A common saying in [[Tasnan]] to dismiss a complaint is "Justice was buried with [[Duke Betan of House Gryffon|Betan]]," and the common cause that once was shared has long since vanished. 
+
+## Player Notes
+- Funded many different schools throughout [[Tasnan]]
+	- The [[school of magic]] in [[Ashport]] that [[Noel]] and [[Laurel]] attended as children.
+	- A school for gifted children in [[Brindinford]], with sponsorship for the brightest pupils to study in [[The Hassan Dynasty]] [^1]
+
+[^1]: [[S7 2026-10-25|2026-10-25]]

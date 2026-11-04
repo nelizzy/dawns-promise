@@ -1,6 +1,6 @@
 ---
 tags:
-  - organization
+  - organization/appeasers
 ---
 # Slumbering Collective
 While in control of the [[docks of Ashport]], [[Crimson Serenity]] and the [[Slumbering Collective]] do not enforce most common laws of the city, allowing the [[Ashport Dockworkers United|United Dockworkers]] to operate freely within their territory. Rather, their focus is on any other cults or worship of the [[Leviathan]], rooting out any who diverge from the Collective's doctrine.

@@ -34,3 +34,18 @@ A mercenary company stationed in [[Ashport]], headed by [[Laurel]], [[Noel]], [[
 - support in development (training, kit, etc.), 
 - meaningful work,
 - loyalty of the leaders (if someone fucks with you unjustly, they'll find the fuck out)
+
+## Player Notes
+- Recruited [[Hadrick Voss]] (in non-combat capacity) and other surviving members of [[The Last Lanterns]] [^1]
+- Maintains an information network of poor underprivileged folks (urchins, slums, etc.) that pays for information gathered [^2] [^3]
+- Established rapport with the Stone Custodians, in favor of their lands and rights being respected. This has in turn earned a tutor that can teach Laurel druid-based spells. [^3]
+- Pays [[House Baramber]] a 10% tithe (loot is already calculated with tithe) [^4]
+- Sponsored by [[House Baramber]]
+
+[^1]: [[S6 2026-10-04|2026-10-04]]
+
+[^2]: [[S1 2026-08-09|2026-08-09]] 
+
+[^3]: [[S7 2026-10-25|2026-10-25]]
+
+[^4]: [[S0 2026-07-26|2026-07-26]]

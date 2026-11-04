@@ -10,3 +10,6 @@ While not actual within the city itself, an ancient set of elemental [[Standing 
 The Stone Custodians are a [[Wild Elves|Wild Elf]] community, guarding the Standing Stones as ancestral territory. 
 
 In the heights of the [[Tasnan]] kingdom, the [[Wild Elves]] were driven back, and the power of the Stones seized by the crown, but in the fall of order during the revolution, the ancestral territory was reclaimed, and fiercely defended against any trespassers.
+
+## Player Notes
+- They provide a tutor to [[Laurel]] due to [[Dawn's Promise]]s efforts in building bonds with them

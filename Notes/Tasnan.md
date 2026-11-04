@@ -50,3 +50,6 @@ Precious few have made it through the revolution without losing friends and fami
 A common saying in Tasnan to dismiss a complaint is "Justice was buried with [[Duke Betan of House Gryffon|Betan]]," and the common cause that once was shared has long since vanished. 
 
 People in Tasnan are selfish by necessity, with the notion commonly accepted that you'll only get out of life what you can take.
+
+## Player Note
+- The revolution cut population roughly in half, through combination of death and fleeing the land (number subject to change)

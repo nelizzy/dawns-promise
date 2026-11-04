@@ -1,6 +1,8 @@
 ---
 tags:
   - location/world
+aliases:
+  - Ekoris
 ---
 # 🌎 Ekoris
 ![](https://res.cloudinary.com/sk0qaemk/image/upload/v1791292640/s43bdgi18nybhngkadp7.jpg)

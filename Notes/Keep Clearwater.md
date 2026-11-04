@@ -1,5 +1,9 @@
 # Keep Clearwater
 #location/poi #tasnan
 ![](https://res.cloudinary.com/sk0qaemk/image/upload/v1791320069/k2eo5xixh0ahhi64mfuy.jpg)
-A Keep about 15 miles out from [[Ashport]], built along a riverbend.
-Was held by [[The Last Lanterns]] until [[S6 2026-10-04|2026-10-04]] when [[Dawn's Promise]] liberated it as part of the job [[Clear Keep Clearwater]]
+- A Keep about 15 miles out from [[Ashport]], built along a riverbend.
+	- River runs west and south with defensible bridge towards the west
+	- Open plains to north and east
+	- Palisade to the east
+	- Arrow slits in every direction
+- Was held by [[The Last Lanterns]] until [[S6 2026-10-04|2026-10-04]] when [[Dawn's Promise]] liberated it as part of the job [[Clear Keep Clearwater]]
