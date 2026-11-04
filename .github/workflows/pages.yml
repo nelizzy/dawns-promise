@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: read
+  actions: read     # changelog: look up the last successful deploy
   pages: write
   id-token: write
 
@@ -43,6 +44,37 @@ jobs:
         with:
           path: .site/dist
 
+      # ---- changelog: diff published notes since the last successful deploy ----
+      - name: Find last deployed commit
+        id: since
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sha=$(gh api "repos/${{ github.repository }}/actions/workflows/pages.yml/runs?branch=main&status=success&per_page=1" \
+                --jq '.workflow_runs[0].head_sha // empty')
+          if [ -n "$sha" ] && git cat-file -e "$sha^{commit}" 2>/dev/null; then
+            echo "sha=$sha" >> "$GITHUB_OUTPUT"
+          else
+            echo "No previous deploy found – skipping changelog."
+          fi
+      - name: Generate changelog
+        id: changelog
+        if: steps.since.outputs.sha != '' && steps.since.outputs.sha != github.sha
+        working-directory: .site
+        env:
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
+          AVATAR_URL: https://cdn.discordapp.com/emojis/1534434066873454653.webp?size=100
+        run: |
+          node scripts/changelog.mjs ${{ steps.since.outputs.sha }} ${{ github.sha }} --out "$RUNNER_TEMP/changelog.json"
+          [ -f "$RUNNER_TEMP/changelog.json" ] && echo "has=true" >> "$GITHUB_OUTPUT" || true
+      - name: Upload changelog
+        if: steps.changelog.outputs.has == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: changelog
+          path: ${{ runner.temp }}/changelog.json
+          retention-days: 7
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -52,3 +84,36 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  notify-discord:
+    needs: deploy
+    if: ${{ needs.deploy.result == 'success' && !contains(github.event.head_commit.message, '[no changelog]') }}
+    runs-on: ubuntu-latest
+    continue-on-error: true   # a Discord hiccup shouldn't mark the deploy as failed
+    steps:
+      - uses: actions/download-artifact@v4
+        id: dl
+        continue-on-error: true   # no artifact = nothing changed
+        with:
+          name: changelog
+      - name: Post changelog to Discord
+        if: steps.dl.outcome == 'success'
+        env:
+          WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          python3 <<'PYEOF'
+          import os, urllib.request, urllib.error
+          req = urllib.request.Request(
+              os.environ["WEBHOOK_URL"],
+              data=open("changelog.json", "rb").read(),
+              headers={"Content-Type": "application/json",
+                       "User-Agent": "Mozilla/5.0 (compatible; DawnsPromiseChangelog/1.0)"},
+              method="POST",
+          )
+          try:
+              with urllib.request.urlopen(req) as resp:
+                  print(f"Discord webhook responded with status {resp.status}")
+          except urllib.error.HTTPError as err:
+              print(f"Discord webhook error {err.code}: {err.read().decode('utf-8', 'replace')}")
+              raise
+          PYEOF
