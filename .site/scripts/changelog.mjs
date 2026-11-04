@@ -31,7 +31,8 @@ const isPublished = p => p.endsWith('.md') && !p.split('/').some((seg, i) => seg
 const nameOf = p => pages.get(p)?.name ?? path.basename(p, '.md');
 const linkOf = p => {
   const pg = pages.get(p);
-  return pg && siteUrl ? `[${pg.name}](${encodeURI(siteUrl + pg.url)})` : nameOf(p);
+  // pg.url already includes the site's base path (e.g. /dawns-promise/...), so join it to the origin only
+  return pg && siteUrl ? `[${pg.name}](${encodeURI(new URL(siteUrl).origin + pg.url)})` : nameOf(p);
 };
 
 const git = (...a) => execFileSync('git', ['-c', 'core.quotepath=false', '-C', ROOT, ...a], { encoding: 'utf8', maxBuffer: 1 << 28 });
