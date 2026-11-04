@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e2c1460c1bd0efb9",
+        "id": "f005bc14a501e7e6",
         "type": "tabs",
         "children": [
           {
-            "id": "128a7dc69bcfd3e4",
+            "id": "6c42968efda5efa2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Noel.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Noel"
+              "title": "New tab"
             }
           }
         ]
@@ -55,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#location/poi",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -99,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Noel.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -230,34 +225,34 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "128a7dc69bcfd3e4",
+  "active": "6c42968efda5efa2",
   "lastOpenFiles": [
-    "Notes/Wellsprings.md",
-    "Untitled.md",
-    "✨ House Rules and Lore.md",
+    "Notes/Depth Speech.md",
+    "Notes/Dragon Cult.md",
+    "Notes/Hadrick Voss.md",
+    "Notes/Kobolds.md",
+    "Notes/Lycanthropy.md",
+    "Notes/Magic System and Scrolls.md",
+    "Notes/Necrotic Wellspring.md",
+    "Notes/Nercomancy.md",
+    "Notes/Nineteen Claws Ebb Slumber.md",
+    "Notes/Owlbears.md",
+    "Notes/Pinecrest.md",
+    "Notes/Resurrection.md",
+    "Notes/Sea Lord Vashorey.md",
+    "Notes/Southern Wode Tribe.md",
     "Notes/Spirits.md",
+    "Notes/Tarruk.md",
+    "✨ House Rules and Lore.md",
+    "Templates/4 Note.md",
+    "Sessions/S8 2026-11-01.md",
+    "Sessions/S7 2026-10-25.md",
+    "Sessions/S6 2026-10-04.md",
     "Sessions/S5 2026-09-27.md",
     "Sessions/S4 2026-09-06.md",
-    "Notes/Pinecrest.md",
     "Sessions/S3 2026-08-30.md",
-    "Notes/The Bone Thief.md",
-    "Notes/Ore Shortage.md",
-    "Notes/Necrotic Wellspring.md",
-    "Notes/Nineteen Claws Ebb Slumber.md",
-    "Notes/Magic System and Scrolls.md",
-    "Notes/The Speakers.md",
-    "Notes/Crimson Serenity.md",
-    "Notes/Slumbering Collective.md",
-    "Notes/Depth Speech.md",
-    "Notes/Merchant's Union.md",
-    "Notes/Tasnan.md",
-    "Notes/The Last Lanterns.md",
-    "Sessions/S6 2026-10-04.md",
-    "Notes/The Gilded Compass.md",
-    "Notes/Sea Lord Vashorey.md",
-    "Notes/Tarruk.md",
-    "Notes/Stone Custodians.md",
-    "Notes/Owlbears.md",
+    "Sessions/S2 2026-08-16.md",
+    "Sessions/S1 2026-08-09.md",
     "Components/Scripts/discord-job-grabber.js",
     "Components/Scripts",
     "Components",
