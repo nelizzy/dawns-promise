@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Wellsprings.md",
+                "file": "Notes/Noel.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wellsprings"
+              "title": "Noel"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Wellsprings.md",
+                "file": "Notes/Noel.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -232,8 +232,8 @@
   },
   "active": "128a7dc69bcfd3e4",
   "lastOpenFiles": [
-    "Untitled.md",
     "Notes/Wellsprings.md",
+    "Untitled.md",
     "✨ House Rules and Lore.md",
     "Notes/Spirits.md",
     "Sessions/S5 2026-09-27.md",
