@@ -9,7 +9,7 @@ The Baron has a reputation for successfully employing bread and circus technique
 
 Some of these funds have gone to attracting travelling events, including the inbound faire mentioned in [[A Faire's Ill Portents]].
 
-# Learned Fact
+## Player Notes
 - About 5000 people (though built for closer to 10000ish).
 - About 1 week of travel away from Ashport
 - Made up of following districts:
