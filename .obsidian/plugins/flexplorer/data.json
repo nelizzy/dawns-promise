@@ -13,8 +13,7 @@
         "Sessions",
         "🏠 Home.md",
         "📋 Jobs.md",
-        "🌎 Ekoris.md",
-        "Untitled.md"
+        "🌎 Ekoris.md"
       ]
     },
     "Sessions": {
@@ -30,7 +29,8 @@
         "S5 2026-09-27.md",
         "S6 2026-10-04.md",
         "S7 2026-10-25.md",
-        "S8 2026-11-01.md"
+        "S8 2026-11-01.md",
+        "S9 2026-11-22.md"
       ]
     },
     "Templates": {
@@ -742,12 +742,6 @@
       "ctime": 1791292639226,
       "mtime": 1793801407226
     },
-    "Untitled.md": {
-      "isPinned": false,
-      "isHidden": false,
-      "ctime": 1793799946222,
-      "mtime": 1793799946552
-    },
     "Templates/4 Note.md": {
       "isPinned": false,
       "isHidden": false,
@@ -855,6 +849,12 @@
       "isHidden": false,
       "ctime": 1793801750291,
       "mtime": 1793805284812
+    },
+    "Sessions/S9 2026-11-22.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1795372616538,
+      "mtime": 1795372616538
     }
   },
   "showHidden": true,

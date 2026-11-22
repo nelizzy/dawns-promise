@@ -10,7 +10,7 @@
     "highlight": true,
     "hardBreak": false,
     "replaceText": [],
-    "overrideNativeCopy": false,
+    "overrideNativeCopy": true,
     "wikiToMarkdown": true,
     "tabToSpace": true,
     "tabSpaceSize": 2
