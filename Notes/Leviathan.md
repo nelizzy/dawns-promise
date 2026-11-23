@@ -21,6 +21,9 @@ In [[Tasnan]], people care about money.
 		- A false badge that shows a symbol of 'trusted authority' to whoever views it. It also seemed to implant memories of an identity tied to that authority in the person wielding the badge.
 - Every Leviathan cult wears masks, awakeners and appeasers alike. [^2]
 	- e.g. smooth masks with two glowing white eyes.
+- Local cults — even if they theoretically share the same cause (both appeasers) — are incredibly private and distrustful of others.
+- **Space displacement** (square -> hex map) is a common trait (but not always present) around leviathan magic. ^ffe84f
+- Awakener cult in [[Brindinford]] used sleep magic.
 
 [^1]: [[S7 2026-10-25|2026-10-25]]
 

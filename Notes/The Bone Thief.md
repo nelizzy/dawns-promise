@@ -14,6 +14,8 @@ Sponsored by [[The Gilded Compass]]
 
 Cemetery plots are being unearthed in the night, in the nearby small village of [[Pinecrest]]. [[The Gilded Compass]]  has put out a notice, offering a very small sum as a reward for investigation and stopping the thefts. The greater reward would certainly be winning favor from the Church.
 
+Sessions: [[S3 2026-08-30]]
+
 ## Update 1
 With a letter delivered back to [[the Gilded Compass]], you remain on guard of the location for another day, before a ranking priest arrives with a small entourage, assuring you that they will take up a vigilant watch over the [[Ossuary]] and the [[Necrotic Wellspring]] that lies within. While fully closing a [[Wellsprings|Wellspring]] is a tremendous task, placing wards to contain it and guarding the location is far more manageable. They inform you that a barrier will be enacted, which will contain the presence of [[Nineteen Claws Ebb Slumber]] to within the [[Ossuary]] as well, preventing it from reaching out to any passersby. 
 

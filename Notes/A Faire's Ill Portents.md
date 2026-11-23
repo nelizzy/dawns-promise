@@ -20,3 +20,5 @@ This request comes from outside Ashport, from the town of [[Brindinford]]. The B
 Such visions center around a travelling faire, currently on their way towards Brindinford, a tribe of nomadic halflings that pass through once every few years with much celebration.
 
 What fate awaits is unknown, but he assures that a great many will be in your debt, should you prevent the oncoming calamity.
+
+Sessions: [[S7 2026-10-25]] -> [[S8 2026-11-01]] -> [[S9 2026-11-22]] 

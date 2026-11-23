@@ -20,7 +20,10 @@ tags:
 - Recognizable by the classic faceless masks and wearing silver.
 - Safeword "Serendipity"
 - Use long pikes and crossbows as weapons.
+- They have a top-down structure that limits information access, keeping people at a need-to-know basis to operate at their role in the hierarchy, in case they turn against the cause. [^3]
 
 [^1]: [[S7 2026-10-25|2026-10-25]]
 
 [^2]: [[S8 2026-11-01|2026-11-01]]
+
+[^3]: [[S9 2026-11-22|2026-11-22]]

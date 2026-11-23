@@ -140,7 +140,8 @@
         "The Speakers.md",
         "Wellsprings.md",
         "Pinecrest.md",
-        "Spirits.md"
+        "Spirits.md",
+        "The Wrinkle.md"
       ],
       "ctime": 1791309960581,
       "mtime": 1791309960581
@@ -389,7 +390,7 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791317489094,
-      "mtime": 1793800432828
+      "mtime": 1795453827980
     },
     "Notes/Slumbering Collective.md": {
       "isPinned": false,
@@ -401,7 +402,7 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1791317519830,
-      "mtime": 1791317529319
+      "mtime": 1795453538460
     },
     "Notes/Politics and Organizations of Ashport.md": {
       "isPinned": false,
@@ -818,7 +819,7 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1793803678073,
-      "mtime": 1793803974882
+      "mtime": 1795453658749
     },
     "Notes/Wellsprings.md": {
       "isPinned": false,
@@ -854,7 +855,13 @@
       "isPinned": false,
       "isHidden": false,
       "ctime": 1795372616538,
-      "mtime": 1795372616538
+      "mtime": 1795453829907
+    },
+    "Notes/The Wrinkle.md": {
+      "isPinned": false,
+      "isHidden": false,
+      "ctime": 1795453894050,
+      "mtime": 1795453894050
     }
   },
   "showHidden": true,
